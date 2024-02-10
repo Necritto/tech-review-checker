@@ -1,0 +1,97 @@
+@use "sass:map";
+@import '@styles/mixins/breakpoints';
+
+@mixin background-image($size, $iconName) {
+    background: {
+        position: center;
+        image: url('@/assets/images/icons/toast/' + $iconName + '.svg');
+        size: $size;
+        repeat: no-repeat;
+    };
+}
+
+.toast {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    min-width: 300px;
+    max-width: inherit;
+    min-height: 64px;
+    margin-left: auto;
+    padding: $indent-step * 5 $indent-step * 6;
+    overflow: hidden;
+    color: $primary-text;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 10%), 0 2px 15px 0 rgba(0, 0, 0, 5%);
+    transform: translateZ(0);
+    pointer-events: auto;
+
+    &--default {
+        background-color: map.get($toasts, 'default');
+    }
+
+    &--error {
+        background-color: map.get($toasts, 'error');
+    }
+
+    &--warning {
+        background-color: map.get($toasts, 'warning');
+    }
+
+    &--success {
+        background-color: map.get($toasts, 'success');
+    }
+
+    &__icon {
+        display: inline-block;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        margin-right: $indent-step * 3;
+
+        &--error {
+            @include background-image(20px, 'error');
+        }
+
+        &--success {
+            @include background-image(20px, 'success');
+        }
+
+        @include background-image(20px, 'warning');
+    }
+
+    &__message {
+        flex-basis: 100%;
+        font-size: 16px;
+        line-height: 1.2;
+        word-break: break-word;
+    }
+
+    &__close {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        margin-left: $indent-step * 4;
+        padding: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: opacity 0.3s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        @include background-image(20px, 'close');
+    }
+
+    @include mobile {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
