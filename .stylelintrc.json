@@ -1,0 +1,30 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-rational-order",
+        "stylelint-config-standard-scss",
+        "stylelint-config-recommended-scss"
+    ],
+    "plugins": ["stylelint-order", "stylelint-scss", "stylelint-config-rational-order/plugin"],
+    "rules": {
+        "color-hex-length": "long",
+        "color-function-notation": "legacy",
+        "selector-class-pattern": "^.+$",
+        "scss/no-global-function-names": null,
+        "no-descending-specificity": [
+            true,
+            {
+                "severity": "warning"
+            }
+        ],
+        "scss/at-extend-no-missing-placeholder": [
+            true,
+            {
+                "severity": "warning"
+            }
+        ],
+        "selector-pseudo-element-no-unknown": true,
+        "media-query-no-invalid": null,
+        "media-feature-range-notation": "prefix"
+    }
+}
