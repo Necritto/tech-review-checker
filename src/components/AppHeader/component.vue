@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconSvg from '@/assets/images/icons/check.svg?component';
+import LogoSvg from '@/assets/images/icons/check.svg?component';
 import UIButton from '@components/UI/UIButton/component.vue';
 import LoadFilesButton from '@components/LoadFilesButton/component.vue';
 import {jsonToObject} from '@utils/normalizer';
@@ -20,7 +20,7 @@ function handleShowResult() {
 
 <template>
     <header class="container app-header">
-        <IconSvg class="app-logo" />
+        <LogoSvg class="app-logo" />
         <section class="app-header-actions">
             <LoadFilesButton
                 class="action-button"

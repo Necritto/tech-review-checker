@@ -1,0 +1,8 @@
+@import '@styles/mixins/breakpoints';
+
+$offset-height: calc($indent-step * 48);
+
+.app-main {
+    margin-top: $offset-height;
+    margin-bottom: $offset-height;
+}

@@ -9,8 +9,7 @@
     gap: 16px;
     align-items: center;
     justify-content: space-between;
-    min-height: 60px;
-    padding: $indent-step * 3 $indent-step * 4;
+    padding: $indent-step * 5 $indent-step * 7;
     background-color: $secondary-bg;
     border-radius: 16px;
     backdrop-filter: blur(8px);
@@ -21,6 +20,7 @@
 }
 
 .app-logo {
+    flex-shrink: 0;
     fill: $primary-text;
 }
 

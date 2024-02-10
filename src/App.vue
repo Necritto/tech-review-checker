@@ -4,12 +4,10 @@ import {onBeforeUnmount} from 'vue';
 import MainBackground from '@components/MainBackground/component.vue';
 import ToastContainer from '@components/UI/Toast/ToastContainer/component.vue';
 import AppHeader from '@components/AppHeader/component.vue';
-import AppFooter from '@components/AppFooter/component.vue';
-import {useQuestionsStore} from '@stores/questions';
+import AppMain from '@components/AppMain/component.vue';
 import {useToastStore} from '@stores/toast';
 import {toastChannel, ToastChannelEventPayload} from '@events/toast';
 
-const questionsStore = useQuestionsStore();
 const toastStore = useToastStore();
 
 const unsubscribe = toastChannel().on((event: ToastChannelEventPayload) => {
@@ -24,12 +22,7 @@ onBeforeUnmount(unsubscribe);
 <template>
     <MainBackground />
     <AppHeader />
-    <main>
-        <pre>
-            {{ questionsStore.questions }}
-        </pre>
-    </main>
-    <AppFooter />
+    <AppMain />
     <Teleport to="body">
         <ToastContainer />
     </Teleport>

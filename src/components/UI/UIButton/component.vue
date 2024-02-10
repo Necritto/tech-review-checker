@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import type {UIButtonProps, UIButtonEmits} from './types';
+import type {UIButtonProps, UIButtonEmits, UIButtonSlots} from './types';
 
 defineProps<UIButtonProps>();
 
 const emit = defineEmits<UIButtonEmits>();
+const slot = defineSlots<UIButtonSlots>();
 </script>
 
 <template>
@@ -11,7 +12,12 @@ const emit = defineEmits<UIButtonEmits>();
         class="ui-button"
         @click="emit('click')"
     >
-        {{ label }}
+        <template v-if="!!slot.default">
+            <slot />
+        </template>
+        <template v-else>
+            {{ label }}
+        </template>
     </button>
 </template>
 
