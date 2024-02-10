@@ -12,6 +12,7 @@
     padding: $indent-step * 5 $indent-step * 7;
     background-color: $secondary-bg;
     border-radius: 16px;
+    box-shadow: $base-shadow;
     backdrop-filter: blur(8px);
 
     @include mobile {

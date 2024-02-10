@@ -1,8 +1,113 @@
 @import '@styles/mixins/breakpoints';
+@import '@styles/mixins/hover';
 
-$offset-height: calc($indent-step * 48);
+$offset-height: calc($indent-step * 30);
 
 .app-main {
+    display: flex;
+    flex-direction: column;
+    gap: $indent-step * 10;
     margin-top: $offset-height;
     margin-bottom: $offset-height;
+    padding: 0;
+}
+
+.app-subject {
+    padding: $indent-step * 12;
+    background-color: $secondary-bg;
+    border-radius: 16px;
+    box-shadow: $base-shadow;
+
+    @include mobile-md {
+        padding: $indent-step * 6;
+    }
+}
+
+.app-subject-title {
+    font-size: 1.8em;
+
+    @include mobile-xs {
+        font-size: 1.4em;
+    }
+}
+
+.app-question-list {
+    display: flex;
+    flex-direction: column;
+    gap: $indent-step * 3;
+    margin-top: $indent-step * 8;
+}
+
+.app-question {
+    display: flex;
+    gap: $indent-step * 2;
+    align-items: center;
+    margin: 0 $indent-step * -2;
+    padding: $indent-step * 2 $indent-step * 2;
+    font-size: 0.95em;
+    line-height: 1.2;
+    border-radius: 8px;
+
+    @include hover {
+        background-color: $secondary-bg-hover;
+        transition: background-color $transition-duration cubic-bezier(.4,0,.2,1);
+    }
+
+    &--advanced {
+        color: $secondary-text;
+    }
+
+    @include mobile-xs {
+        font-size: 0.8em;
+    }
+}
+
+.app-question-progress {
+    display: flex;
+    gap: $indent-step;
+}
+
+.app-question-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $link-hover-line;
+    border-radius: 50%;
+
+    &::before {
+        display: flex;
+        margin: 0 auto;
+        content: '';
+    }
+
+    &--success,
+    &--weak {
+        &::before {
+            background-color: $link-hover-line;
+        }
+    }
+
+    &--success,
+    &--error {
+        &::before {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+    }
+
+    &--weak {
+        &::before {
+            width: 6px;
+            height: 12px;
+            border-radius: 50% 0 0 50%;
+            transform: translateX(-2px);
+        }
+    }
+
+    &--error {
+        &::before {
+            border: 1px solid $link-hover-line;
+        }
+    }
 }
