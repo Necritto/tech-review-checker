@@ -1,0 +1,9 @@
+@mixin increase-clickable-field($size) {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        inset: (-$size) (-$size) (-$size) (-$size);
+        content: '';
+    }
+}

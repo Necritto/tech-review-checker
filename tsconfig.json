@@ -3,7 +3,11 @@
         "baseUrl": "./",
         "paths": {
             "@/*": ["./src/*"],
-            "@components/*": ["./src/components/*"]
+            "@components/*": ["./src/components/*"],
+            "@styles/*": ["./src/assets/styles/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@stores/*": ["./src/stores/*"],
+            "@events/*": ["./src/events/*"]
         },
 
         "target": "ES2020",

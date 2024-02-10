@@ -1,0 +1,20 @@
+// Bounce
+.bounce-enter-active {
+    animation-name: bounce-in-right;
+}
+
+.bounce-leave-active {
+    animation-name: bounce-out-right;
+}
+
+.bounce-leave-active,
+.bounce-enter-active {
+    animation-duration: 750ms;
+    animation-fill-mode: both;
+}
+
+.bounce-move {
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+    transition-property: all;
+}

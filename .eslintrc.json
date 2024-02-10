@@ -7,6 +7,9 @@
         "ecmaVersion": "latest"
     },
     "plugins": ["@typescript-eslint"],
+    "globals": {
+        "NodeJS": true
+    },
     "env": {
         "node": true,
         "commonjs": true,

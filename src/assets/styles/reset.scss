@@ -45,6 +45,7 @@ a {
 
 button {
     padding: 0;
+    color: currentcolor;
     font-size: inherit;
     background: transparent;
     border: none;
@@ -59,7 +60,7 @@ table {
 
 html {
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     scroll-behavior: smooth;
 
     * {

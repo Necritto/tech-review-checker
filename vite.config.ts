@@ -2,6 +2,7 @@ import {fileURLToPath, URL} from 'url';
 import {defineConfig} from 'vite';
 import {VitePWA} from 'vite-plugin-pwa';
 import vue from '@vitejs/plugin-vue';
+import svgLoader from 'vite-svg-loader';
 
 const vitePwa = VitePWA({
     registerType: 'autoUpdate',
@@ -27,11 +28,15 @@ const vitePwa = VitePWA({
 
 export default defineConfig({
     base: '',
-    plugins: [vue(), vitePwa],
+    plugins: [vue(), svgLoader(), vitePwa],
     resolve: {
         alias: [
             {find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url))},
             {find: '@components', replacement: fileURLToPath(new URL('./src/components', import.meta.url))},
+            {find: '@styles', replacement: fileURLToPath(new URL('./src/assets/styles', import.meta.url))},
+            {find: '@utils', replacement: fileURLToPath(new URL('./src/utils', import.meta.url))},
+            {find: '@stores', replacement: fileURLToPath(new URL('./src/stores', import.meta.url))},
+            {find: '@events', replacement: fileURLToPath(new URL('./src/events', import.meta.url))},
         ],
     },
     css: {

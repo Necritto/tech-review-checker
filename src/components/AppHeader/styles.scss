@@ -1,3 +1,44 @@
-.header {
-    text-align: center;
+@import '@styles/mixins/hover';
+@import '@styles/mixins/breakpoints';
+
+.app-header {
+    position: sticky;
+    top: $indent-step * 8;
+    z-index: $index-2;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: $indent-step * 5 $indent-step * 7;
+    background-color: $secondary-bg;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+
+    @include mobile {
+        border-radius: 0;
+    }
+}
+
+.app-logo {
+    flex-shrink: 0;
+    fill: $primary-text;
+}
+
+.app-header-actions {
+    display: flex;
+    gap: 16px 24px;
+}
+
+.action-button {
+    border-bottom: 1px solid transparent;
+
+    @include hover {
+        color: $link-hover;
+        border-bottom: 1px solid $link-hover-line;
+        transition: color $transition-duration ease, border-bottom $transition-duration ease;
+    }
+
+    @include mobile {
+        font-size: 0.85em;
+    }
 }
