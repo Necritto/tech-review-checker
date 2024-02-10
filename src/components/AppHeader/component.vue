@@ -13,8 +13,8 @@ async function handleLoadQuestions(file: File) {
     questionsStore.setQuestions(result);
 }
 
-function handleShowResult() {
-    console.log('need impl handleShowResult');
+function handleDelete() {
+    questionsStore.setQuestions([]);
 }
 </script>
 
@@ -30,8 +30,8 @@ function handleShowResult() {
             />
             <UIButton
                 class="action-button"
-                label="Вывести результат"
-                @click="handleShowResult"
+                label="Удалить вопросы"
+                @click="handleDelete"
             />
         </section>
     </header>
