@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {onBeforeMount} from 'vue';
+
 import UIButton from '@components/UI/UIButton/component.vue';
 import {QUESTION_STATUSES} from '@/constants/question-statuses';
 import {useQuestionsStore} from '@stores/questions';
@@ -6,11 +8,7 @@ import type {QuestionStatus} from '@stores/questions/types';
 
 const questionsStore = useQuestionsStore();
 
-void async function () {
-    const res = await fetch('/default-questions.json');
-    const json = await res.json();
-    questionsStore.setQuestions(json);
-}();
+onBeforeMount(questionsStore.loadDefaultQuestions);
 
 /** @todo refactor predicates */
 const isSuccess = (status: QuestionStatus) => QUESTION_STATUSES.SUCCESS === status;
