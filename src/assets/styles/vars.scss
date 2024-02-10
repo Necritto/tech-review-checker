@@ -1,0 +1,38 @@
+// Fonts
+$primary-font: 'Hubot Sans', sans-serif;
+
+// Z-index
+$index-0: 0; // Для наползающих элементов в общем потоке
+$index-1: 1; // Для наползающих элементов в общем потоке
+$index-2: 2; // Для наползающих элементов в общем потоке
+$index-3: 3; // Для масок
+$index-4: 4; // Для сайдбаров
+$index-5: 5; // Для модалок
+$index-6: 6; // Для элементов, перекрывающих всё
+
+// Breackpoints
+$desktop-xs: 999px;
+$tablet: 768px;
+$mobile: 540px;
+$mobile-s: 375px;
+$mobile-xs: 374px;
+
+// Indent
+$indent-step: 4px;
+
+// Container
+$container-width: 1240px;
+$container-indent: $indent-step * 5;
+
+// Colors
+$extra-light: rgb(255, 255, 255);
+$primary-text: rgba(255, 228, 230, 90%);
+$secondary-text: rgba(255, 228, 230, 50%);
+$primary-bg: rgb(28, 25, 23);
+$secondary-bg: rgba(255, 255, 255, 5%);
+$link-hover: rgba(254, 205, 211, 90%);
+$link-hover-line: rgba(253, 164, 175, 30%);
+$selection: rgb(159, 86, 226);
+
+// Other
+$mouse-device: '(hover: hover) and (pointer: fine)';
