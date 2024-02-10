@@ -1,6 +1,7 @@
 {
     "root": true,
-    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:vue/vue3-essential"],
+    "parser": "vue-eslint-parser",
     "parserOptions": {
         "parser": "@typescript-eslint/parser",
         "ecmaVersion": "latest"
@@ -106,6 +107,53 @@
                 "asyncArrow": "always"
             }
         ],
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/no-explicit-any": "off",
+        "vue/no-v-for-template-key": "off",
+        "vue/html-indent": [
+            "error",
+            4,
+            {
+                "attribute": 1,
+                "baseIndent": 1,
+                "closeBracket": 0,
+                "alignAttributesVertically": true,
+                "ignores": []
+            }
+        ],
+        "vue/html-self-closing": [
+            "error",
+            {
+                "html": {
+                    "void": "any",
+                    "normal": "always",
+                    "component": "always"
+                }
+            }
+        ],
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/no-v-html": "off",
+        "vue/order-in-components": "error",
+        "vue/require-prop-types": "error",
+        "vue/require-default-prop": "error",
+        "vue/attributes-order": "error",
+        "vue/multi-word-component-names": "off",
+        "vue/padding-line-between-blocks": "error",
+        "vue/mustache-interpolation-spacing": "error",
+        "vue/html-closing-bracket-spacing": "error",
+        "vue/html-closing-bracket-newline": "error",
+        "vue/first-attribute-linebreak": "error",
+        "vue/multiline-html-element-content-newline": "error",
+        "vue/attribute-hyphenation": "error",
+        "vue/max-attributes-per-line": [
+            "error",
+            {
+                "singleline": {
+                    "max": 1
+                },
+                "multiline": {
+                    "max": 1
+                }
+            }
+        ]
     }
 }

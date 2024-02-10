@@ -1,5 +1,6 @@
-setTimeout(() => {
-    const root = document.getElementById('app');
+import {createApp} from 'vue';
+import App from '@/App.vue';
 
-    root!.textContent = 'Loaded!';
-}, 5000);
+import '@/assets/styles/main.scss';
+
+createApp(App).mount('#app');

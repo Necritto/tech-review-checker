@@ -1,0 +1,128 @@
+[
+    {
+        "subject": "Общие вопросы",
+        "questions": [
+            {
+                "question": "Что такое кроссбраузерность?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое поток документа?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между cookie, sessionStorage и localStorage?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое HTTP?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Какие методы может иметь HTTP-запрос?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между HTTP и HTTPS?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое REST и RESTful api?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое WebSocket? В чем принцип его работы?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое History API в браузере?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между идентификацией, аутентификацией, авторизацией?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между PUT-, PATCH- и POST-запросами?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Разница между Long-Polling, Websockets и Server-Sent Events?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Разница между preload, prefetch, preconnect и prerender?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Разница между layout, painting и compositing?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Что такое Progressive Web Application (PWA)?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Что такое Веб-компоненты?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Что такое Content Security Policy (CSP)?",
+                "isAdvanced": true
+            },
+            {
+                "question": "Что такое CORS?",
+                "isAdvanced": true
+            }
+        ]
+    },
+    {
+        "subject": "OOP & FP",
+        "questions": [
+            {
+                "question": "Что такое и какие основные принципы ООП?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между композицией и наследованием?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Какой тип наследования в JavaScript?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Как работает механизм прототипов в JavaScript?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое SOLID?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое функциональное программирование?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между ООП и ФП в JavaScript?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между функцией и методом?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое дескрипторы свойств объектов?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Что такое свойства-аксессоры объектов?",
+                "isAdvanced": false
+            },
+            {
+                "question": "Разница между императивным и декларативным подходами программирования?",
+                "isAdvanced": true
+            }
+        ]
+    }
+]
