@@ -28,7 +28,7 @@
     transform: translateZ(0);
     pointer-events: auto;
 
-    &--default {
+    &--info {
         background-color: map.get($toasts, 'default');
     }
 
@@ -37,6 +37,7 @@
     }
 
     &--warning {
+        color: $primary-bg;
         background-color: map.get($toasts, 'warning');
     }
 
@@ -50,6 +51,7 @@
         width: 20px;
         height: 20px;
         margin-right: $indent-step * 3;
+        transform: translateY(-1px);
 
         &--error {
             @include background-image(20px, 'error');
@@ -59,7 +61,11 @@
             @include background-image(20px, 'success');
         }
 
-        @include background-image(20px, 'warning');
+        &--warning {
+            filter: invert(1);
+
+            @include background-image(20px, 'warning');
+        }
     }
 
     &__message {

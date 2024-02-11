@@ -32,12 +32,12 @@ function handleSave() {
 </script>
 
 <template>
-    <section class="container name-modal">
-        <h3 class="name-modal-header">Введите инициалы</h3>
+    <section class="container template-wrapper">
+        <h3 class="template-header">Введите инициалы</h3>
         <hr>
         <UIInput
             v-model="respondent"
-            class="name-modal-offset"
+            class="template-offset"
             label="Инициалы"
             required
             :hint="errorMessage"
@@ -45,7 +45,7 @@ function handleSave() {
             @input="handleInput"
         />
         <UIButton
-            class="name-modal-offset"
+            class="template-offset"
             label="Сохранить"
             @click="handleSave"
         />

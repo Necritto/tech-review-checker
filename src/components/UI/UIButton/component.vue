@@ -9,6 +9,7 @@ const slot = defineSlots<UIButtonSlots>();
 
 <template>
     <button
+        type="button"
         :class="['button', {'button--flat': flat}]"
         @click="emit('click')"
     >

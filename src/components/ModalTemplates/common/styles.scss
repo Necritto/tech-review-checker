@@ -1,13 +1,18 @@
-.name-modal {
+.template-wrapper {
     padding: $indent-step * 8;
     background-color: $primary-bg;
     border-radius: 16px;
 }
 
-.name-modal-header {
+.template-header {
     font-size: 1.3em;
 }
 
-.name-modal-offset {
+.template-offset {
     margin-top: $indent-step * 5;
+}
+
+.template-button-toolbar {
+    display: flex;
+    gap: 24px;
 }

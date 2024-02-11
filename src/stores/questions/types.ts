@@ -1,4 +1,4 @@
-import {QUESTION_STATUSES} from '@/constants/question-statuses';
+import {QUESTION_STATUSES} from '@/constants/question';
 
 export interface Questions {
     subject: string;

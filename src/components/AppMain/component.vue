@@ -2,7 +2,7 @@
 import {onBeforeMount} from 'vue';
 
 import UIButton from '@components/UI/UIButton/component.vue';
-import {QUESTION_STATUSES} from '@/constants/question-statuses';
+import {QUESTION_STATUSES} from '@/constants/question';
 import {useQuestionsStore} from '@stores/questions';
 import type {QuestionStatus} from '@stores/questions/types';
 
