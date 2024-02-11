@@ -1,0 +1,13 @@
+.name-modal {
+    padding: $indent-step * 8;
+    background-color: $primary-bg;
+    border-radius: 16px;
+}
+
+.name-modal-header {
+    font-size: 1.3em;
+}
+
+.name-modal-offset {
+    margin-top: $indent-step * 5;
+}

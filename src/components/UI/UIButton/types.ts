@@ -1,5 +1,6 @@
 export type UIButtonProps = {
     label?: string;
+    flat?: boolean;
 }
 
 export type UIButtonEmits = {

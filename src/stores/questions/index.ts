@@ -8,8 +8,13 @@ import {wait} from '@utils/wait';
 import type {Questions, QuestionStatus} from './types';
 
 export const useQuestionsStore = defineStore('questions', () => {
+    const respondent = ref<string>();
     const questions = ref<Questions[]>([]);
     const loaderStore = useLoaderStore();
+
+    function updateResponent(newValue: string) {
+        respondent.value = newValue;
+    } 
 
     function setQuestions(newQuestions: Questions[]): void {
         questions.value = newQuestions.map(({subject, questions}) => {
@@ -55,5 +60,5 @@ export const useQuestionsStore = defineStore('questions', () => {
         loaderStore.hide();
     }
 
-    return {questions, setQuestions, updateQuestion, loadDefaultQuestions};
+    return {questions, respondent, setQuestions, updateQuestion, loadDefaultQuestions, updateResponent};
 });

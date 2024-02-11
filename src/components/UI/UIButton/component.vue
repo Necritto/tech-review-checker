@@ -9,7 +9,7 @@ const slot = defineSlots<UIButtonSlots>();
 
 <template>
     <button
-        class="ui-button"
+        :class="['button', {'button--flat': flat}]"
         @click="emit('click')"
     >
         <template v-if="!!slot.default">

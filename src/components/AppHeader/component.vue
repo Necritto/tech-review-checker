@@ -6,8 +6,10 @@ import ExpandSvg from '@/assets/images/icons/expand.svg?component';
 import UIButton from '@components/UI/UIButton/component.vue';
 import LoadFilesButton from '@components/LoadFilesButton/component.vue';
 import Collapse from '@components/UI/Collapse/component.vue';
+import InputNameModal from '@components/Modals/InputName/component.vue';
 import {jsonToObject} from '@utils/normalizer';
 import {useQuestionsStore} from '@stores/questions';
+import {modalChannel} from '@events/modal';
 import type {Questions} from '@stores/questions/types';
 
 const questionsStore = useQuestionsStore();
@@ -25,6 +27,11 @@ function handleDelete() {
 function handleTogglePanel() {
     isPanelOpen.value = !isPanelOpen.value;
 }
+
+function handleSetName() {
+    /** @todo deal with typing */
+    modalChannel().emit(InputNameModal as any);
+}
 </script>
 
 <template>
@@ -32,6 +39,7 @@ function handleTogglePanel() {
         <LogoSvg class="app-logo" />
         <UIButton
             :class="['panel-button', {'panel-button--open': isPanelOpen}]"
+            flat
             @click="handleTogglePanel"
         >
             <span>Возможности</span>
@@ -43,6 +51,12 @@ function handleTogglePanel() {
         >
             <hr />
             <section class="app-header-actions">
+                <UIButton
+                    class="action-button"
+                    label="Указать инициалы интервьюируемого"
+                    flat
+                    @click="handleSetName"
+                />
                 <LoadFilesButton
                     class="action-button"
                     label="Загрузить вопросы"
@@ -52,6 +66,7 @@ function handleTogglePanel() {
                 <UIButton
                     class="action-button"
                     label="Удалить вопросы"
+                    flat
                     @click="handleDelete"
                 />
             </section>

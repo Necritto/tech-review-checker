@@ -1,3 +1,23 @@
-.ui-button {
+@import '@styles/mixins/hover';
+
+.button {
     display: inline-block;
+    padding: $indent-step * 3 $indent-step * 4;
+    background-color: $secondary-bg-hover;
+    border-radius: 8px;
+    transition: background-color $transition-duration ease;
+
+    @include hover {
+        background-color: $secondary-bg;
+    }
+
+    &--flat {
+        padding: 0;
+        background-color: initial;
+        border-radius: 0;
+
+        @include hover {
+            background-color: transparent;
+        }
+    }
 }

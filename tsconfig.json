@@ -7,7 +7,9 @@
             "@styles/*": ["./src/assets/styles/*"],
             "@utils/*": ["./src/utils/*"],
             "@stores/*": ["./src/stores/*"],
-            "@events/*": ["./src/events/*"]
+            "@events/*": ["./src/events/*"],
+            "@directives/*": ["./src/directives/*"],
+            "@types/*": ["./src/types/*"]
         },
 
         "target": "ES2020",

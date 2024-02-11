@@ -19,6 +19,10 @@ time, mark, audio, video {
     border: 0;
 }
 
+strong, b {
+    font-weight: bold;
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -47,6 +51,7 @@ button {
     padding: 0;
     color: currentcolor;
     font-size: inherit;
+    font-family: $primary-font;
     background: transparent;
     border: none;
     outline: none;

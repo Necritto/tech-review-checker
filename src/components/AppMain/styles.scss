@@ -12,6 +12,17 @@ $offset-height: calc($indent-step * 30);
     padding: 0;
 }
 
+.app-main-respondent {
+    color: $secondary-text;
+    font-size: 1.3em;
+    line-height: 1.3;
+    text-align: center;
+
+    strong {
+        color: $primary-text;
+    }
+}
+
 .app-subject {
     padding: $indent-step * 12;
     background-color: $secondary-bg;

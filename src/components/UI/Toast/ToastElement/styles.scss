@@ -1,4 +1,4 @@
-@use "sass:map";
+@use 'sass:map';
 @import '@styles/mixins/breakpoints';
 
 @mixin background-image($size, $iconName) {
