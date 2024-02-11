@@ -13,29 +13,32 @@ import type {Questions, QuestionStatus} from './types';
 export const useQuestionsStore = defineStore('questions', () => {
     const respondent = ref<string>();
     const questions = ref<Questions[]>([]);
+    const isQuestionsDirty = ref<boolean>(false);
     const loaderStore = useLoaderStore();
     const toastStore = useToastStore();
 
     function updateResponent(newValue: string) {
         respondent.value = newValue;
-    } 
+    }
+
+    function clearQuestions() {
+        if (!isQuestionsDirty.value) {
+            return;
+        }
+
+        questions.value = _modifyQuestions(questions.value);
+    }
 
     function setQuestions(newQuestions: Questions[]): void {
-        questions.value = newQuestions.map(({subject, questions}) => {
-            return {
-                subject,
-                questions: questions.map((question) => {
-                    return {
-                        ...question,
-                        status: QUESTION_STATUSES.OFF,
-                    };
-                }),
-            };
-        });
+        questions.value = _modifyQuestions(newQuestions);
     }
 
     /** @todo refactor search algorithm */
     function updateQuestion(status: QuestionStatus, search: string): void {
+        if (!isQuestionsDirty.value) {
+            isQuestionsDirty.value = true;
+        }
+
         questions.value = questions.value.map(({subject, questions}) => {
             !!questions.find(({question}) => question === search);
 
@@ -124,5 +127,20 @@ export const useQuestionsStore = defineStore('questions', () => {
         loadDefaultQuestions,
         updateResponent,
         saveQuestionsResult,
+        clearQuestions,
     };
 });
+
+function _modifyQuestions(questions: Questions[]): Questions[] {
+    return questions.map(({subject, questions}) => {
+        return {
+            subject,
+            questions: questions.map((question) => {
+                return {
+                    ...question,
+                    status: QUESTION_STATUSES.OFF,
+                };
+            }),
+        };
+    });
+}

@@ -2,9 +2,9 @@
 import UIButton from '@components/UI/UIButton/component.vue';
 import {useQuestionsStore} from '@stores/questions';
 
-import {InputNameModalEmits} from './types';
+import {SaveResultTemplateEmits} from './types';
 
-const emit = defineEmits<InputNameModalEmits>();
+const emit = defineEmits<SaveResultTemplateEmits>();
 const questionsStore = useQuestionsStore();
 
 function handleOpen() {

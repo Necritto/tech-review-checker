@@ -1,3 +1,3 @@
-export type InputNameModalEmits = {
+export type InputNameTemplateEmits = {
     close: [void];
 };

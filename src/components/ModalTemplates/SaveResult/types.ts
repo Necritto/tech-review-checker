@@ -1,3 +1,3 @@
-export type InputNameModalEmits = {
+export type SaveResultTemplateEmits = {
     close: [void];
 };

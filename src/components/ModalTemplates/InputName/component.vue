@@ -5,9 +5,9 @@ import UIInput from '@components/UI/UIInput/component.vue';
 import UIButton from '@components/UI/UIButton/component.vue';
 import {useQuestionsStore} from '@stores/questions';
 
-import {InputNameModalEmits} from './types';
+import {InputNameTemplateEmits} from './types';
 
-const emit = defineEmits<InputNameModalEmits>();
+const emit = defineEmits<InputNameTemplateEmits>();
 const questionsStore = useQuestionsStore();
 const respondent = ref<string>('');
 const errorMessage = ref<string>('');
