@@ -2,7 +2,7 @@
 import {onBeforeMount} from 'vue';
 
 import UIButton from '@components/UI/UIButton/component.vue';
-import {QUESTION_STATUSES} from '@/constants/question-statuses';
+import {QUESTION_STATUSES} from '@/constants/question';
 import {useQuestionsStore} from '@stores/questions';
 import type {QuestionStatus} from '@stores/questions/types';
 
@@ -23,6 +23,12 @@ function handleAnswer(status: QuestionStatus, question: string): void {
 <template>
     <main class="app-main container">
         <template v-if="questionsStore.questions?.length">
+            <h2
+                v-if="questionsStore.respondent"
+                class="app-main-respondent"
+            >
+                Отвечает: <strong>{{ questionsStore.respondent }}</strong>
+            </h2>
             <article
                 v-for="{subject, questions} in questionsStore.questions"
                 :key="subject"
@@ -42,14 +48,17 @@ function handleAnswer(status: QuestionStatus, question: string): void {
                     >
                         <div class="app-question-progress">
                             <UIButton
+                                flat
                                 :class="['app-question-button', {'app-question-button--success': isSuccess(status)}]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.SUCCESS, question)"
                             />
                             <UIButton
+                                flat
                                 :class="['app-question-button', {'app-question-button--weak': isWeak(status)}]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.WEAK, question)"
                             />
                             <UIButton
+                                flat
                                 :class="['app-question-button', {'app-question-button--error': isError(status)}]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.ERROR, question)"
                             />

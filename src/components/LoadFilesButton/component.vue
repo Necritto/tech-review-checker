@@ -16,6 +16,7 @@ onChange((files) => files && emit('load', files));
 
 <template>
     <UIButton
+        flat
         :label="label"
         @click="open"
     />

@@ -1,6 +1,14 @@
 @import '@styles/mixins/hover';
 @import '@styles/mixins/breakpoints';
 
+%header-block {
+    padding: $indent-step * 5 $indent-step * 7;
+    background-color: $secondary-bg;
+    border-radius: 16px;
+    box-shadow: $base-shadow;
+    backdrop-filter: blur(8px);
+}
+
 .app-header {
     position: sticky;
     top: $indent-step * 8;
@@ -9,28 +17,57 @@
     gap: 16px;
     align-items: center;
     justify-content: space-between;
-    padding: $indent-step * 5 $indent-step * 7;
-    background-color: $secondary-bg;
-    border-radius: 16px;
-    box-shadow: $base-shadow;
-    backdrop-filter: blur(8px);
+
+    @extend %header-block;
 
     @include mobile {
         border-radius: 0;
     }
 }
 
-.app-logo {
+.app-logo,
+.panel-button {
     flex-shrink: 0;
     fill: $primary-text;
 }
 
-.app-header-actions {
+.panel-button {
     display: flex;
+    align-items: center;
+
+    svg {
+        position: relative;
+        top: 1px;
+        transition: transform $transition-duration ease;
+    }
+
+    &--open {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.app-header-expand {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+.app-header-actions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     gap: 16px 24px;
+    align-items: flex-end;
+    width: 100%;
+
+    @extend %header-block;
 }
 
 .action-button {
+    width: max-content;
     border-bottom: 1px solid transparent;
 
     @include hover {
