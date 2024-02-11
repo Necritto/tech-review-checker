@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {InputEvent} from '@types/events';
+import type {InputEvent} from '@gtypes/html-events';
 import type {InputProps, InputEmits} from './types';
 
 type UIInputEvent = InputEvent<HTMLInputElement>;

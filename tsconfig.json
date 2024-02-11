@@ -9,7 +9,7 @@
             "@stores/*": ["./src/stores/*"],
             "@events/*": ["./src/events/*"],
             "@directives/*": ["./src/directives/*"],
-            "@types/*": ["./src/types/*"]
+            "@gtypes/*": ["src/types/*"]
         },
 
         "target": "ES2020",

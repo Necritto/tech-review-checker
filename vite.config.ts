@@ -38,7 +38,7 @@ export default defineConfig({
             {find: '@stores', replacement: fileURLToPath(new URL('./src/stores', import.meta.url))},
             {find: '@events', replacement: fileURLToPath(new URL('./src/events', import.meta.url))},
             {find: '@directives', replacement: fileURLToPath(new URL('./src/directives', import.meta.url))},
-            {find: '@types', replacement: fileURLToPath(new URL('./src/types', import.meta.url))},
+            {find: '@gtypes', replacement: fileURLToPath(new URL('./src/types', import.meta.url))},
         ],
     },
     css: {
