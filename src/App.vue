@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {onBeforeUnmount} from 'vue';
 
-import MainBackground from '@components/MainBackground/component.vue';
 import ToastContainer from '@components/UI/Toast/ToastContainer/component.vue';
 import UILoader from '@components/UI/Loader/component.vue';
 import AppHeader from '@components/AppHeader/component.vue';
@@ -22,7 +21,6 @@ onBeforeUnmount(toastUnsubscribe);
 </script>
 
 <template>
-    <MainBackground />
     <AppHeader />
     <AppMain />
     <Teleport to="body">
