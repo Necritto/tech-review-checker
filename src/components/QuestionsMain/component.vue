@@ -21,45 +21,54 @@ function handleAnswer(status: QuestionStatus, question: string): void {
 </script>
 
 <template>
-    <main class="app-main container">
+    <main class="questions-main container">
         <template v-if="questionsStore.questions?.length">
             <h2
                 v-if="questionsStore.respondent"
-                class="app-main-respondent"
+                class="questions-main-respondent"
             >
                 Отвечает: <strong>{{ questionsStore.respondent }}</strong>
             </h2>
             <article
                 v-for="{subject, questions} in questionsStore.questions"
                 :key="subject"
-                class="app-subject"
+                class="questions-subject"
             >
-                <h2 class="app-subject-title">{{ subject }}</h2>
+                <h2 class="questions-subject-title">{{ subject }}</h2>
                 <hr />
                 <ul
-                    class="app-question-list"
+                    class="questions-question-list"
                     role="list"
                 >
                     <li
                         v-for="{question, isAdvanced, status} in questions"
                         :key="question"
-                        :class="['app-question', {'app-question--advanced': isAdvanced}]"
+                        :class="['questions-question', {'questions-question--advanced': isAdvanced}]"
                         role="listitem"
                     >
-                        <div class="app-question-progress">
+                        <div class="questions-question-progress">
                             <UIButton
                                 flat
-                                :class="['app-question-button', {'app-question-button--success': isSuccess(status)}]"
+                                :class="[
+                                    'questions-question-button',
+                                    {'questions-question-button--success': isSuccess(status)}
+                                ]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.SUCCESS, question)"
                             />
                             <UIButton
                                 flat
-                                :class="['app-question-button', {'app-question-button--weak': isWeak(status)}]"
+                                :class="[
+                                    'questions-question-button',
+                                    {'questions-question-button--weak': isWeak(status)}
+                                ]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.WEAK, question)"
                             />
                             <UIButton
                                 flat
-                                :class="['app-question-button', {'app-question-button--error': isError(status)}]"
+                                :class="[
+                                    'questions-question-button',
+                                    {'questions-question-button--error': isError(status)}
+                                ]"
                                 @click="() => handleAnswer(QUESTION_STATUSES.ERROR, question)"
                             />
                         </div>

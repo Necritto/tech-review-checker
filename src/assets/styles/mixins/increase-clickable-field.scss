@@ -3,7 +3,7 @@
 
     &::before {
         position: absolute;
-        inset: (-$size) (-$size) (-$size) (-$size);
+        inset: (-$size);
         content: '';
     }
 }

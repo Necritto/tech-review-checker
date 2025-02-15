@@ -2,20 +2,21 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@/*": ["./src/*"],
-            "@components/*": ["./src/components/*"],
-            "@styles/*": ["./src/assets/styles/*"],
-            "@utils/*": ["./src/utils/*"],
-            "@stores/*": ["./src/stores/*"],
-            "@events/*": ["./src/events/*"],
-            "@directives/*": ["./src/directives/*"],
-            "@gtypes/*": ["src/types/*"]
+            "@/*": [ "./src/*" ],
+            "@pages/*": [ "./src/pages/*" ],
+            "@components/*": [ "./src/components/*" ],
+            "@styles/*": [ "./src/assets/styles/*" ],
+            "@utils/*": [ "./src/utils/*" ],
+            "@stores/*": [ "./src/stores/*" ],
+            "@events/*": [ "./src/events/*" ],
+            "@directives/*": [ "./src/directives/*" ],
+            "@gtypes/*": [ "src/types/*" ]
         },
 
         "target": "ES2020",
         "useDefineForClassFields": true,
         "module": "ESNext",
-        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "lib": [ "ES2020", "DOM", "DOM.Iterable" ],
         "skipLibCheck": true,
 
         /* Bundler mode */
@@ -32,6 +33,6 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-    "references": [{"path": "./tsconfig.node.json"}]
+    "include": [ "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue" ],
+    "references": [ { "path": "./tsconfig.node.json" } ]
 }

@@ -9,7 +9,7 @@
     backdrop-filter: blur(8px);
 }
 
-.app-header {
+.questions-header {
     position: sticky;
     top: $indent-step * 8;
     z-index: $index-2;
@@ -25,7 +25,7 @@
     }
 }
 
-.app-logo,
+.questions-logo,
 .panel-button {
     flex-shrink: 0;
     fill: $primary-text;
@@ -48,14 +48,14 @@
     }
 }
 
-.app-header-expand {
+.questions-header-expand {
     position: absolute;
     top: 100%;
     right: 0;
     width: 100%;
 }
 
-.app-header-actions {
+.questions-header-actions {
     position: absolute;
     display: flex;
     flex-direction: column;

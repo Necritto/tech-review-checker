@@ -47,8 +47,8 @@ function handleConfirm() {
 </script>
 
 <template>
-    <header class="container app-header">
-        <LogoSvg class="app-logo" />
+    <header class="container questions-header">
+        <LogoSvg class="questions-logo" />
         <UIButton
             :class="['panel-button', {'panel-button--open': isPanelOpen}]"
             flat
@@ -59,10 +59,10 @@ function handleConfirm() {
         </UIButton>
         <Collapse
             :open="isPanelOpen"
-            class="app-header-expand"
+            class="questions-header-expand"
         >
             <hr />
-            <section class="app-header-actions">
+            <section class="questions-header-actions">
                 <UIButton
                     class="action-button"
                     label="Указать инициалы интервьюируемого"
