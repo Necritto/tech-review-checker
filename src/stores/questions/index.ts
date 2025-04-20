@@ -40,8 +40,6 @@ export const useQuestionsStore = defineStore('questions', () => {
         }
 
         questions.value = questions.value.map(({subject, questions}) => {
-            !!questions.find(({question}) => question === search);
-
             return {
                 subject,
                 questions: questions.map((question) => {

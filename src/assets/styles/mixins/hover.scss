@@ -1,7 +1,8 @@
+@use "@styles/vars" as vars;
+
 @mixin hover {
     &:hover {
-        /* stylelint-disable-next-line */
-        @media #{$mouse-device} {
+        @media #{vars.$mouse-device} {
             @content;
         }
     }

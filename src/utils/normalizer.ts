@@ -18,6 +18,7 @@ export const jsonToObject = (file: File): Promise<object> => {
             try {
                 resolve(JSON.parse(readerEvent.target.result));
             } catch (error) {
+                console.error(error);
                 dispatchError();
             }
         };

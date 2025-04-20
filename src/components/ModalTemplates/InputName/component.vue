@@ -22,7 +22,9 @@ function handleSave() {
     const value = respondent.value.trim();
 
     if (!value) {
-        return errorMessage.value = 'Укажите инициалы';
+        errorMessage.value = 'Укажите инициалы';
+
+        return;
     }
 
     questionsStore.updateResponent(value);

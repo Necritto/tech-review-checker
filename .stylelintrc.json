@@ -6,7 +6,7 @@
         "stylelint-config-recommended-scss",
         "stylelint-config-recommended-vue/scss"
     ],
-    "plugins": ["stylelint-order", "stylelint-scss", "stylelint-config-rational-order/plugin"],
+    "plugins": [ "stylelint-order", "stylelint-scss", "stylelint-config-rational-order/plugin" ],
     "rules": {
         "color-hex-length": "long",
         "color-function-notation": "legacy",
@@ -25,6 +25,13 @@
             }
         ],
         "selector-pseudo-element-no-unknown": true,
+        "declaration-property-value-no-unknown": null,
+        "declaration-property-value-keyword-no-deprecated": [
+            true,
+            {
+                "ignoreKeywords": "break-word"
+            }
+        ],
         "media-query-no-invalid": null,
         "media-feature-range-notation": "prefix"
     }

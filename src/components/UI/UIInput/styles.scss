@@ -1,5 +1,5 @@
 @use 'sass:map';
-@import '@styles/mixins/hover';
+@use '@styles/mixins' as mixins;
 
 .input-wrapper {
     position: relative;
@@ -43,7 +43,7 @@
         @extend %touched-label;
     }
 
-    @include hover {
+    @include mixins.hover {
         border-color: $link-hover-line;
     }
 }

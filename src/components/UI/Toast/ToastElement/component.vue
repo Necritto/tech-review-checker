@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<ToastElementProps>(), {
 
 const emit = defineEmits<ToastElementEmits>();
 
-const timer = ref<NodeJS.Timeout>();
+const timer = ref<ReturnType<typeof setTimeout>>();
 
 timer.value = setTimeout(() => emit('close', props.id), props.timeout);
 
