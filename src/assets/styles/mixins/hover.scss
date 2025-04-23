@@ -1,9 +1,0 @@
-@use "@styles/vars" as vars;
-
-@mixin hover {
-    &:hover {
-        @media #{vars.$mouse-device} {
-            @content;
-        }
-    }
-}

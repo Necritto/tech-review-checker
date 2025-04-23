@@ -1,32 +1,35 @@
+import {fileURLToPath, URL} from 'node:url';
+
 import {defineConfig} from 'eslint/config';
 import {includeIgnoreFile} from '@eslint/compat';
-import {fileURLToPath} from 'node:url';
 import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import pluginVue from 'eslint-plugin-vue';
 import sonarjs from 'eslint-plugin-sonarjs';
+import svelte from 'eslint-plugin-svelte';
+
+import svelteConfig from './svelte.config.js';
 
 const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
 
 export default defineConfig([
     includeIgnoreFile(gitignorePath),
-    {files: ['**/*.{js,mjs,cjs,ts,vue}'], plugins: {js}, extends: ['js/recommended']},
-    tseslint.configs.recommended,
-    ...pluginVue.configs['flat/essential'],
-    ...pluginVue.configs['flat/strongly-recommended'],
-    ...pluginVue.configs['flat/recommended'],
+    js.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...svelte.configs.recommended,
     sonarjs.configs.recommended,
-    {files: ['**/*.vue'], languageOptions: {parserOptions: {parser: tseslint.parser}}},
 ], {
-    settings: {
-        
-    },
+    files: ['**/*.svelte', '**/*.js', '**/*.ts'],
     languageOptions: {
         sourceType: 'module',
         globals: {
             ...globals.browser,
             ...globals.node,
+        },
+        parserOptions: {
+            parser: tseslint.parser,
+            extraFileExtensions: ['.svelte'],
+            svelteConfig,
         },
     },
     rules: {
@@ -124,54 +127,7 @@ export default defineConfig([
                 asyncArrow: 'always',
             },
         ],
-        '@typescript-eslint/no-explicit-any': 'off',
-        'vue/no-v-for-template-key': 'off',
-        'vue/html-indent': [
-            'error',
-            4,
-            {
-                attribute: 1,
-                baseIndent: 1,
-                closeBracket: 0,
-                alignAttributesVertically: true,
-                ignores: [],
-            },
-        ],
-        'vue/html-self-closing': [
-            'error',
-            {
-                html: {
-                    void: 'any',
-                    normal: 'always',
-                    component: 'always',
-                },
-            },
-        ],
-        'vue/singleline-html-element-content-newline': 'off',
-        'vue/no-v-html': 'off',
-        'vue/order-in-components': 'error',
-        'vue/require-prop-types': 'error',
-        'vue/require-default-prop': 'error',
-        'vue/attributes-order': 'error',
-        'vue/multi-word-component-names': 'off',
-        'vue/padding-line-between-blocks': 'error',
-        'vue/mustache-interpolation-spacing': 'error',
-        'vue/html-closing-bracket-spacing': 'error',
-        'vue/html-closing-bracket-newline': 'error',
-        'vue/first-attribute-linebreak': 'error',
-        'vue/multiline-html-element-content-newline': 'error',
-        'vue/attribute-hyphenation': 'error',
-        'vue/max-attributes-per-line': [
-            'error',
-            {
-                singleline: {
-                    max: 1,
-                },
-                multiline: {
-                    max: 1,
-                },
-            },
-        ],
+        '@typescript-eslint/no-explicit-any': 'warn',
         'sonarjs/todo-tag': 'warn',
     },
 });
