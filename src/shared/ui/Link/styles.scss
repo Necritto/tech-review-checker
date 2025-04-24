@@ -1,0 +1,14 @@
+@use '@styles/mixins' as mixins;
+
+.link {
+    color: var(--trc-secondary-text-color);
+    transition: color 0.3s ease;
+
+    @include mixins.hover {
+        color: var(--trc-secondary-accent-color);
+    }
+}
+
+.active {
+    color: var(--trc-secondary-accent-color);
+}
