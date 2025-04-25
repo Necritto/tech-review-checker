@@ -4,75 +4,75 @@
         "questions": [
             {
                 "question": "Что такое кроссбраузерность?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое поток документа?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между cookie, sessionStorage и localStorage?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое HTTP?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Какие методы может иметь HTTP-запрос?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между HTTP и HTTPS?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое REST и RESTful api?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое WebSocket? В чем принцип его работы?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое History API в браузере?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между идентификацией, аутентификацией, авторизацией?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между PUT-, PATCH- и POST-запросами?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между Long-Polling, Websockets и Server-Sent Events?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между preload, prefetch, preconnect и prerender?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между layout, painting и compositing?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое Progressive Web Application (PWA)?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое Веб-компоненты?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое Content Security Policy (CSP)?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое CORS?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -81,47 +81,47 @@
         "questions": [
             {
                 "question": "Что такое и какие основные принципы ООП?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между композицией и наследованием?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Какой тип наследования в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как работает механизм прототипов в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое SOLID?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое функциональное программирование?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между ООП и ФП в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между функцией и методом?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое дескрипторы свойств объектов?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое свойства-аксессоры объектов?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между императивным и декларативным подходами программирования?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -130,67 +130,67 @@
         "questions": [
             {
                 "question": "Что такое HTML и для чего он используется?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое doctype? И для чего он используется?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое валидация? И какие типы проверок HTML документа вы знаете?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Какой тэг использовать для того, что бы сверстать кнопку?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое инлайновый стиль? Можно ли его переопределить?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое семантика? Какие семантичные тэги вы знаете?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Чем отличается <article> от <section>?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как семантически правильно сверстать картинку с подписью?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Какая разница между тэгами <strong><em> и <b><i>?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Типы <input> элементов в HTML?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Для чего используют атрибут inputmode?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Для чего используют data-атрибуты?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между <script>, <script async> и <script defer>?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Почему хорошей практикой считается располагать <link> для подключения CSS стилей внутри тэга <head>, а <script> для подключения JS ставить перед закрывающимся тэгом </body>?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Для чего используется атрибут capture?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Как можно скрыть элемент разметки не используя CSS и JS?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -199,71 +199,71 @@
         "questions": [
             {
                 "question": "Что такое CSS? И для чего он используется?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Варианты добавление CSS стилей на страницу?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Типы позиционирования в CSS?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Блочная модель CSS?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое селектор? И какие селекторы существуют?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое специфичность селектора? Как считать вес селектора?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между Reset.css и Normalize.css?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между margin и padding?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое вендорные префиксы? И для чего они используются?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое схлопывание границ (margin collapsing)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Какие CSS-свойства используются для создания анимаций и плавных переходов?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое z-index? Как формируется контекст наложения?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое CSS препроцессор?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Плюсы и минусы методологии БЭМ?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Глобальные ключевые слова в CSS?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Как с помощью CSS определить, поддерживается ли свойство в браузере?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Порядок наложения элементов в CSS (Stacking Order)?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -272,207 +272,207 @@
         "questions": [
             {
                 "question": "Типы данных в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между == и === (нестрогое/строгое равенство)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между var, let и const?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое Strict mode в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между Rest и Spread операторами?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое деструктуризация?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Расскажите об операторе Optional Chaining (?.)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое оператор нулевого слияния (??)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "В чём отличие оператора нулевого слияния (??) и оператора “ИЛИ” (||)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между function declaration и function expression?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое поднятие (Hoisting)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое замыкание (Closure)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое чистая функция?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое IIFE?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как передаются параметры в функцию: по ссылке или по значению?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое рекурсия?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что значит текст max call stack size exceeded в консоли?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между параметром и аргументом функции?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что обозначает this в JavaScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое область видимости (Scope)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между .call(), .apply() и bind()?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое прототип (Prototype) объекта?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как превратить любой тип данных в булевый? Перечислите ложные значения в JS?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Почему результат сравнения 2х объектов это false?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между глубокой (deep) и поверхностной (shallow) копиями объекта? Как сделать каждую из них?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как проверить, является ли значение массивом?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между typeof и instanceof?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между .forEach() и .map()?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Плюсы и минусы иммутабельности? Как достичь иммутабельности в JS?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое Set, Map, WeakMap и WeakSet?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как добавить и удалить обработчик события на DOM-элемент?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое распространение события (Event Propagation)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое делегирование событий (Event Delegation)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между e.preventDefault() и e.stopPropagation()?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как динамически добавить элемент на HTML-страницу?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Для чего используется метод .scrollIntoView()?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое AJAX?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое цикл событий (event loop) и как он работает?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между микро и макрозадачами в event loop?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое callback-функция? Что такое Callback Hell?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое промисы (Promises)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Преимущества использовании промисов вместо колбэков?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое async/await?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как выполнить несколько асинхронных операций последовательно?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Почему в JS функции называют объектами первого класса?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое псевдомассив arguments?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между host-объектами и нативными объектами?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Почему расширение нативных JavaScript-объектов это плохая практика?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Каким образом можно обмениваться кодом между файлами в браузере?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое цепочка вызовов функций (chaining)? Как реализовать такой подход?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Расскажите о IntersectionObserver?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -481,119 +481,119 @@
         "questions": [
             {
                 "question": "Что такое React?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Является ли React реактивным?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое Virtual DOM? Как он работает с React?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое JSX?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое строгий режим в React? Его преимущества?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между состоянием(state) и пропсами(props)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое «бурение пропсов» (Prop Drilling)? Как его избежать?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое фрагмент (Fragment)? Почему фрагмент лучше, чем div обёртка?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Для чего нужен атрибут key при рендере списков?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между компонентом и контейнером?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между классовым и функциональным компонентами?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Методы жизненного цикла компонента в React?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое портал (Portal)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое контекст (Context)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое синтетические события в React?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое React хуки (Hooks)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое React-ссылка (ref)? Как создать ссылку?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Зачем в setState() нужно передавать функцию?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как реализовать однократное выполнение операции при начальном рендеринге?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между useEffect() и componentDidMount()?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что делает метод shouldComponentUpdate?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое сhildren?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как в React реализовать двустороннее связывание данных?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как отрендерить HTML код в React-компоненте?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между React и ReactDOM?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое PureComponent?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Что такое React Reconciliation?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между createElement() и cloneElement()?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             },
             {
                 "question": "Разница между memo и useMemo?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     },
@@ -602,27 +602,27 @@
         "questions": [
             {
                 "question": "Что такое Redux? Ключевые принципы Redux?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое редьюсер (Reducer)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между React State и Redux State?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое middleware, для каких целей используют и какие существуют реализации в экосистеме redux?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как выглядит поток данных в Redux-приложении?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Плюсы и минусы Redux?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             }
         ]
     },
@@ -631,47 +631,47 @@
         "questions": [
             {
                 "question": "Что такое TypeScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Типы в TypeScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между типом (type) и интерфейсом (interface)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между абстрактным классом (abstract class) и интерфейсом (interface)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Как TypeScript поддерживает необязательные и дефолтные параметры в функции?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое перечисление (enum)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между типами “Объединение” (|) и “Пересечение” (&)?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое общие типы (generic) в TypeScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Разница между типами void, never и unknown?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Модификаторы доступа в TypeScript?",
-                "isAdvanced": false
+                "tags": [ "easy" ]
             },
             {
                 "question": "Что такое декораторы?",
-                "isAdvanced": true
+                "tags": [ "hard" ]
             }
         ]
     }

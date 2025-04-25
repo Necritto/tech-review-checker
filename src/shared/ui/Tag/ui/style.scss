@@ -1,0 +1,24 @@
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 6px;
+
+    &--easy {
+        color: #aac6f2;
+        background-color: #0b0f26;
+    }
+
+    &--medium {
+        color: #b6b7f5;
+        background-color: #131325;
+    }
+
+    &--hard {
+        color: #ee9450;
+        background-color: #231812;
+    }
+}

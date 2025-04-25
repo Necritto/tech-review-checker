@@ -1,6 +1,7 @@
 <script lang="ts">
-    import {page} from '$app/state';
     import type {Snippet} from 'svelte';
+
+    import {page} from '$app/state';
     
     interface LinkProps {
         children: Snippet;
