@@ -1,14 +1,21 @@
 import Shiki from '@shikijs/markdown-it';
 import MarkdownIt from 'markdown-it';
 
-const md = MarkdownIt();
+// TODO: improve performance
+const createInstance = async () => {
+    const instance = MarkdownIt();
 
-md.use(await Shiki({
-    theme: 'one-dark-pro',
-}));
+    instance.use(await Shiki({
+        theme: 'one-dark-pro',
+    }));
 
-export const parseStringToCodeHtml = (text: string): string => {
-    const html = md.render(text);
+    return instance;
+};
+
+const md = createInstance();
+
+export const parseStringToCodeHtml = async (text: string): Promise<string> => {
+    const html = (await md).render(text);
 
     return html;
 };

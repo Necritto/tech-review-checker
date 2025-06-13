@@ -18,8 +18,8 @@
 
     const questionsCache = new Cache(60 * 60 * 1000);
 
-    const setQuestionMd = (md: string): void => {
-        const html = parseStringToCodeHtml(md);
+    const setQuestionMd = async (md: string): Promise<void> => {
+        const html = await parseStringToCodeHtml(md);
         codeHtmlChannel.emit(html);
     };
 
