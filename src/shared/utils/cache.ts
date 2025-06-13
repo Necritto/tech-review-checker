@@ -6,7 +6,7 @@ interface CacheValue {
 export class Cache {
     private cache = new Map<string, CacheValue>();
 
-    constructor(private defaultTTL = 0) {}
+    constructor(private defaultTTL = 60 * 60 * 1000) {}
 
     public set(key: string, value: CacheValue['value'], ttl = this.defaultTTL): void {
         const expiresAt = Date.now() + ttl;

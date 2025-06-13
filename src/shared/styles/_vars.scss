@@ -26,4 +26,9 @@
 
     /* Size */
     --trc-secondary-block-size: 56px;
+
+    /** Common */
+    --trc-main-offset: 24px;
+    --trc-sidebar-width: 500px;
+    --trc-border: 1px solid var(--trc-border-color);
 }
