@@ -1,8 +1,0 @@
-@mixin hover {
-    &:hover {
-        /* stylelint-disable-next-line */
-        @media #{$mouse-device} {
-            @content;
-        }
-    }
-}

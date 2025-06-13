@@ -1,0 +1,18 @@
+.sidebar {
+        position: relative;
+        width: 100%;
+        max-width: var(--trc-sidebar-width);
+        padding-bottom: var(--trc-main-offset);
+        overflow-y: auto;
+        border-right: var(--trc-border);
+    }
+
+    .subject {
+        position: sticky;
+        top: 0;
+        padding: var(--trc-main-offset) 0 var(--trc-main-offset) var(--trc-main-offset);
+        color: var(--trc-other-accent-color);
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: var(--trc-surface-background-color);
+    }

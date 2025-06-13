@@ -1,0 +1,18 @@
+@use '@styles/mixins' as mixins;
+
+.link {
+    padding: 12px;
+    color: var(--trc-secondary-text-color);
+    border: 1px solid var(--trc-border-color);
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    @include mixins.hover {
+        color: var(--trc-secondary-accent-color);
+        background-color: var(--trc-surface-background-color);
+    }
+}
+
+.active {
+    color: var(--trc-secondary-accent-color);
+}
