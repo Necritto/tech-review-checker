@@ -48,7 +48,7 @@ export default defineConfig([
                 allowIndentationTabs: true,
             },
         ],
-        'no-console': 'off',
+        'no-console': ['error', {allow: ['warn', 'error']}],
         'max-len': ['error', 120],
         'array-bracket-spacing': ['error', 'never'],
         'array-callback-return': 'error',
@@ -129,5 +129,6 @@ export default defineConfig([
         ],
         '@typescript-eslint/no-explicit-any': 'warn',
         'sonarjs/todo-tag': 'warn',
+        'svelte/no-at-html-tags': 'warn',
     },
 });

@@ -6,20 +6,50 @@
     import {Header} from '@widgets/Header';
     import {Footer} from '@widgets/Footer';
     import {Question} from '@entities/Question';
+    import {Cache, codeHtmlChannel, parseStringToCodeHtml} from '@shared/utils';
     import type {Question as QuestionType} from '@shared/types';
 
     import type {LayoutProps} from './$types';
 
     const {data, children}: LayoutProps = $props();
 
+    let activeQuestionId = $state<string>('');
     const currentSidebarContent = $derived(data[page.url.pathname] ?? []);
 
-    const onQuestionClick = (question: string): void => {
-        console.log(question);
+    const questionsCache = new Cache(60 * 60 * 1000);
+
+    const setQuestionMd = (md: string): void => {
+        const html = parseStringToCodeHtml(md);
+        codeHtmlChannel.emit(html);
+    };
+
+    const onQuestionClick = async (id: string, template: string): Promise<void> => {
+        if (!(id && template) || id === activeQuestionId) {
+            return;
+        }
+
+        try {
+            const mdTemplateCache = questionsCache.get<string>(id);
+
+            if (mdTemplateCache) {
+                setQuestionMd(mdTemplateCache);
+
+                return;
+            }
+
+            const mdTemplate = await (await fetch(`/templates${page.url.pathname}/${template}/${id}.md`)).text();
+
+            questionsCache.set(id, mdTemplate);
+            setQuestionMd(mdTemplate);
+            activeQuestionId = id;
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     const onTagClick = (tag: QuestionType['tags'][number]): void => {
-        console.log(tag);
+        console.warn(tag);
+        // TODO: implement
     };
 </script>
 
@@ -33,8 +63,9 @@
                 {#each content.questions as question (question.question)}
                     <Question
                         {...question}
-                        {onQuestionClick}
+                        {activeQuestionId}
                         {onTagClick}
+                        onQuestionClick={(id) => onQuestionClick(id, content.template)}
                     />
                 {/each}
             {/each}
@@ -50,6 +81,7 @@
 <style lang="scss">
     $main-offset: 24px;
     $border: 1px solid var(--trc-border-color);
+    $sidebar-width: 500px;
 
     .main {
         display: flex;
@@ -62,7 +94,7 @@
     .sidebar {
         position: relative;
         width: 100%;
-        max-width: 500px;
+        max-width: $sidebar-width;
         padding-bottom: $main-offset;
         overflow-y: auto;
         border-right: $border;
@@ -80,7 +112,8 @@
 
     .content {
         width: 100%;
-        padding: $main-offset 0 $main-offset $main-offset;
+        max-width: calc(100% - $sidebar-width);
+        padding: $main-offset;
         overflow-y: auto;
     }
 </style>

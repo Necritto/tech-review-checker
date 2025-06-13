@@ -3,25 +3,25 @@
     import {Tag} from '@shared/ui/Tag';
 
     interface QuestionProps extends Question {
-        onQuestionClick: (question: Question['question']) => void;
+        activeQuestionId: Question['id'];
+        onQuestionClick: (id: Question['id']) => void;
         onTagClick: (tag: Question['tags'][number]) => void;
     }
 
-    const {question, tags, onQuestionClick, onTagClick}: QuestionProps = $props();
+    const {id, activeQuestionId, question, tags, onQuestionClick, onTagClick}: QuestionProps = $props();
 </script>
 
 <article class="question">
     <button
-        class="button"
+        class={['button', activeQuestionId === id && 'active']}
         type="button"
-        onclick={() => onQuestionClick(question)}
+        onclick={() => onQuestionClick(id)}
     >
         {question}
     </button>
     <div class="tags">
-        {#each tags as tag (tag + question)}
+        {#each tags as tag (tag + id)}
             <Tag
-            
                 content={tag}
                 variant={tag}
                 onClick={() => onTagClick(tag)}
