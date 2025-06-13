@@ -2,7 +2,7 @@
     font-weight: bold;
     font-family: 'Hubot Sans';
     font-style: normal;
-    src: url('../fonts/HubotSans-Bold.woff2') format('woff2');
+    src: url('../fonts/HubotSans/HubotSans-Bold.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-weight: 300;
     font-family: 'Hubot Sans';
     font-style: normal;
-    src: url('../fonts/HubotSans-Light.woff2') format('woff2');
+    src: url('../fonts/HubotSans/HubotSans-Light.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-weight: 500;
     font-family: 'Hubot Sans';
     font-style: normal;
-    src: url('../fonts/HubotSans-Medium.woff2') format('woff2');
+    src: url('../fonts/HubotSans/HubotSans-Medium.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -26,6 +26,38 @@
     font-weight: normal;
     font-family: 'Hubot Sans';
     font-style: normal;
-    src: url('../fonts/HubotSans-Regular.woff2') format('woff2');
+    src: url('../fonts/HubotSans/HubotSans-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    src: url('../fonts/FiraCode/FiraCodeNF-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    src: url('../fonts/FiraCode/FiraCodeNF-Light.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'FiraCode Nerd Font Med';
+    font-style: normal;
+    src: url('../fonts/FiraCode/FiraCodeNF-Med.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: 'FiraCode Nerd Font';
+    font-style: normal;
+    src: url('../fonts/FiraCode/FiraCodeNF-Reg.woff2') format('woff2');
     font-display: swap;
 }

@@ -23,7 +23,8 @@
 </div>
 
 <style>
-	.content :global(.shiki) {
+    .content :global(.shiki) {
         padding: 20px;
+        line-height: 130%;
     }
 </style>
