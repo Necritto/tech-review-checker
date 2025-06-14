@@ -1,3 +1,9 @@
-<script lang="ts"></script>
+<script lang="ts">
+    import {Answer} from '@entities/Answer';
+</script>
 
-<h1>Questions</h1>
+<svelte:head>
+    <title>Вопросы | Техническое интервью</title>
+</svelte:head>
+
+<Answer emptyText="Выберите вопрос для отображения дополнительной информации" />

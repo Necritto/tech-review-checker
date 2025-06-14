@@ -1,21 +1,20 @@
-import Shiki from '@shikijs/markdown-it';
-import MarkdownIt from 'markdown-it';
+import {fromAsyncCodeToHtml} from '@shikijs/markdown-it/async';
+import {codeToHtml} from 'shiki';
+import MarkdownItAsync from 'markdown-it-async';
 
-// TODO: improve performance
-const createInstance = async () => {
-    const instance = MarkdownIt();
+const md = MarkdownItAsync();
 
-    instance.use(await Shiki({
-        theme: 'one-dark-pro',
-    }));
-
-    return instance;
-};
-
-const md = createInstance();
+md.use(
+    fromAsyncCodeToHtml(
+        codeToHtml,
+        {
+            theme: 'one-dark-pro',
+        },
+    ),
+);
 
 export const parseStringToCodeHtml = async (text: string): Promise<string> => {
-    const html = (await md).render(text);
+    const html = await md.renderAsync(text);
 
     return html;
 };

@@ -7,10 +7,9 @@
     <nav class="menu">
         <Link href="/">Вопросы</Link>
         <Link href="/exercises">Задания</Link>
-        <Link href="/result">Результат</Link>
     </nav>
 </header>
 
 <style lang="scss">
-    @forward './styles';
+    @forward "./styles";
 </style>

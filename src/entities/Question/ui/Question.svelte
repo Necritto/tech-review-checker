@@ -18,7 +18,7 @@
     }: QuestionProps = $props();
 </script>
 
-<article class="question">
+<div class="question">
     <button
         class={['button', activeQuestionId === id && 'active']}
         type="button"
@@ -31,7 +31,7 @@
             <Tag content={tag} variant={tag} onClick={() => onTagClick(tag)} />
         {/each}
     </div>
-</article>
+</div>
 
 <style lang="scss">
     @forward "./styles";

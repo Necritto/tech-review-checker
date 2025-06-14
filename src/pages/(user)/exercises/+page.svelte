@@ -1,30 +1,9 @@
 <script lang="ts">
-    import {codeHtmlChannel} from '@shared/utils';
-
-    let content = $state('');
-
-    $effect(() => {
-        const off = codeHtmlChannel.on((htmlString) => {
-            if (typeof htmlString === 'string' && content !== htmlString) {
-                content = htmlString;
-            }
-        });
-
-        return off;
-    });
+    import {Answer} from '@entities/Answer';
 </script>
 
-<div class="content">
-    {#if content}
-        {@html content}
-    {:else}
-        <p>Выберите задачу или вопрос</p>
-    {/if}
-</div>
+<svelte:head>
+    <title>Задачи | Техническое интервью</title>
+</svelte:head>
 
-<style>
-    .content :global(.shiki) {
-        padding: 20px;
-        line-height: 130%;
-    }
-</style>
+<Answer emptyText="Выберите задачу" />
