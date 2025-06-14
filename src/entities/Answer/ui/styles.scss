@@ -1,0 +1,11 @@
+.content {
+    :global(.shiki) {
+        padding: 20px;
+        line-height: 130%;
+    }
+
+    :global(.shiki code) {
+        display: block;
+        width: inherit;
+    }
+}

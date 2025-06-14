@@ -1,5 +1,6 @@
 <script lang="ts">
     import {page} from '$app/state';
+    import {onNavigate} from '$app/navigation';
 
     import {Question} from '@entities/Question';
 
@@ -19,9 +20,16 @@
     } from '../model/constants';
 
     let activeQuestionId = $state<Nullable<string>>(DEFAULT_ACTIVE_ID);
+
     const currentSidebarContent = $derived(
         SIDEBAR_CONTENT_BY_PAGE[page.url.pathname] ?? [],
     );
+
+    onNavigate(({from, to}) => {
+        if (from?.route.id !== to?.route.id) {
+            activeQuestionId = DEFAULT_ACTIVE_ID;
+        }
+    });
 
     const questionsCache = new Cache();
 
