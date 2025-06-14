@@ -6,212 +6,200 @@ export default [
         template: 'common',
         questions: [
             {
-                id: '',
+                id: 'cross-browser-compatibility',
                 question: 'Что такое кроссбраузерность?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'document-flow',
                 question: 'Что такое поток документа?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'storage-differences',
                 question: 'Разница между cookie, sessionStorage и localStorage?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'http',
                 question: 'Что такое HTTP?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Какие методы может иметь HTTP-запрос?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'http-vs-https',
                 question: 'Разница между HTTP и HTTPS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'rest',
                 question: 'Что такое REST и RESTful api?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'websocket',
                 question: 'Что такое WebSocket? В чем принцип его работы?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'history-api',
                 question: 'Что такое History API в браузере?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'auth-concepts',
                 question: 'Разница между идентификацией, аутентификацией, авторизацией?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'http-methods',
                 question: 'Разница между PUT-, PATCH- и POST-запросами?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+
+                id: 'real-time-tech-comparison',
                 question: 'Разница между Long-Polling, Websockets и Server-Sent Events?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'long-polling-memory-leaks',
+                question: 'Как избежать memory leak в Long-Polling при частых переподключениях?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'resource-hints',
                 question: 'Разница между preload, prefetch, preconnect и prerender?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+
+                id: 'rendering-pipeline',
                 question: 'Разница между layout, painting и compositing?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'transform-layout-impact',
+                question: 'Почему transform не вызывает Layout?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'pwa-definition',
                 question: 'Что такое Progressive Web Application (PWA)?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'web-components',
                 question: 'Что такое Веб-компоненты?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'content-security-policy',
                 question: 'Что такое Content Security Policy (CSP)?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'cors',
                 question: 'Что такое CORS?',
                 tags: [
-                    'hard',
+                    'medium',
+                ],
+            },
+            {
+                id: 'web-worker',
+                question: 'Что такое WebWorker?',
+                tags: [
+                    'medium',
                 ],
             },
         ],
     },
     {
         subject: 'OOP & FP',
-        template: 'oop',
+        template: 'oop-fp',
         questions: [
             {
-                id: '',
+                id: 'oop-principles',
                 question: 'Что такое и какие основные принципы ООП?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'composition-vs-inheritance',
                 question: 'Разница между композицией и наследованием?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Какой тип наследования в JavaScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Как работает механизм прототипов в JavaScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'solid-principles',
                 question: 'Что такое SOLID?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'functional-programming',
                 question: 'Что такое функциональное программирование?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между ООП и ФП в JavaScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между функцией и методом?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое дескрипторы свойств объектов?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое свойства-аксессоры объектов?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между императивным и декларативным подходами программирования?',
+                id: 'monads-in-js',
+                question: 'Что такое монадa и есть ли ей аналоги в JS?',
                 tags: [
                     'hard',
+                ],
+            },
+            {
+                id: 'functors-vs-monads',
+                question: 'В чем разница между монадами и функтороми?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'imperative-vs-declarative',
+                question: 'Разница между императивным и декларативным подходами программирования?',
+                tags: [
+                    'medium',
                 ],
             },
         ],
@@ -221,118 +209,146 @@ export default [
         template: 'html',
         questions: [
             {
-                id: '',
-                question: 'Что такое HTML и для чего он используется?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'doctype',
                 question: 'Что такое doctype? И для чего он используется?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'validation-in-html',
                 question: 'Что такое валидация? И какие типы проверок HTML документа вы знаете?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'validation-impact-seo-accessibility',
+                question: 'Как валидация влияет на SEO и доступность сайта?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'html-button-tag',
                 question: 'Какой тэг использовать для того, что бы сверстать кнопку?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое инлайновый стиль? Можно ли его переопределить?',
+                id: 'accessible-buttons',
+                question: 'Как обеспечить доступность кнопки для пользователей с клавиатурой и экранными читалками?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'aria-roles-button-vs-link',
+                question: 'Чем отличаются роли button и link в контексте доступности?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'html-semantics',
                 question: 'Что такое семантика? Какие семантичные тэги вы знаете?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'article-vs-section',
                 question: 'Чем отличается <article> от <section>?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'article-inside-section',
+                question: 'Можно ли вкладывать <article> внутри <section> и наоборот?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'semantic-image-caption',
                 question: 'Как семантически правильно сверстать картинку с подписью?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'strong-em-vs-b-i',
                 question: 'Какая разница между тэгами <strong><em> и <b><i>?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'html-input-types',
                 question: 'Типы <input> элементов в HTML?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'inputmode-attribute',
                 question: 'Для чего используют атрибут inputmode?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'data-attributes',
                 question: 'Для чего используют data-атрибуты?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между <script>, <script async> и <script defer>?',
+                id: 'css-data-attributes',
+                question: 'Можно ли использовать data-атрибуты для стилизации через CSS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'script-async-defer',
+                question: 'Разница между <script>, <script async> и <script defer>?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'html-link-script-placement',
                 question: `
                     Почему хорошей практикой считается располагать <link> для подключения CSS
                     стилей внутри тэга <head>, а <script> для подключения JS ставить перед закрывающимся тэгом </body>?
                 `,
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'render-blocking-resources',
+                question: 'Что такое render-blocking ресурсы и как их минимизировать?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'html-capture-attribute',
                 question: 'Для чего используется атрибут capture?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'hide-element-no-css-js',
                 question: 'Как можно скрыть элемент разметки не используя CSS и JS?',
                 tags: [
-                    'hard',
+                    'easy',
                 ],
             },
         ],
@@ -342,122 +358,108 @@ export default [
         template: 'css',
         questions: [
             {
-                id: '',
-                question: 'Что такое CSS? И для чего он используется?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'css-injection-methods',
                 question: 'Варианты добавление CSS стилей на страницу?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'css-performance-caching',
+                question: 'Как влияет способ добавления стилей на производительность и кэширование?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'inline-style',
+                question: 'Что такое инлайновый стиль? Можно ли его переопределить?',
+                tags: [
+                    'easy',
+                ],
+            },
+            {
+                id: 'css-positioning-types',
                 question: 'Типы позиционирования в CSS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'css-box-model',
                 question: 'Блочная модель CSS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое селектор? И какие селекторы существуют?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое специфичность селектора? Как считать вес селектора?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'reset-vs-normalize',
                 question: 'Разница между Reset.css и Normalize.css?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между margin и padding?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'vendor-prefixes',
                 question: 'Что такое вендорные префиксы? И для чего они используются?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'margin-collapsing',
                 question: 'Что такое схлопывание границ (margin collapsing)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'margin-vs-padding-collapsing',
+                question: 'Чем схлопывание margin отличается от схлопывания padding??',
+                tags: [
+                    'easy',
+                ],
+            },
+            {
+                id: 'css-transitions-and-animations',
                 question: 'Какие CSS-свойства используются для создания анимаций и плавных переходов?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'z-index-and-stacking-context',
                 question: 'Что такое z-index? Как формируется контекст наложения?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое CSS препроцессор?',
+                id: 'local-vs-global-stacking-context',
+                question: 'Чем отличается локальный и глобальный stacking context?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Плюсы и минусы методологии БЭМ?',
+                id: 'stacking-context-events-focus',
+                question: 'Как влияют stacking context на события кликов и фокус?',
                 tags: [
                     'hard',
                 ],
             },
             {
-                id: '',
+                id: 'css-global-keywords',
                 question: 'Глобальные ключевые слова в CSS?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'css-feature-support',
                 question: 'Как с помощью CSS определить, поддерживается ли свойство в браузере?',
                 tags: [
-                    'hard',
-                ],
-            },
-            {
-                id: '',
-                question: 'Порядок наложения элементов в CSS (Stacking Order)?',
-                tags: [
-                    'hard',
+                    'medium',
                 ],
             },
         ],
@@ -467,360 +469,576 @@ export default [
         template: 'js',
         questions: [
             {
-                id: '',
+                id: 'javascript-data-types',
                 question: 'Типы данных в JavaScript?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-equality-operators',
                 question: 'Разница между == и === (нестрогое/строгое равенство)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'object-is-vs-strict-equality',
+                question: 'В чем разница между Object.is() и ===?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'js-var-let-const',
                 question: 'Разница между var, let и const?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-strict-mode',
                 question: 'Что такое Strict mode в JavaScript?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-rest-vs-spread',
                 question: 'Разница между Rest и Spread операторами?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-rest-spread-limitations',
+                question: 'Какие ограничения и особенности есть у rest и spread операторов?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-spread-vs-objectassign',
+                question: 'В чём разница работы между spread и Object.assign?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-destructuring',
                 question: 'Что такое деструктуризация?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Расскажите об операторе Optional Chaining (?.)?',
+                id: 'javascript-function-vs-method',
+                question: 'Разница между функцией и методом?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-property-descriptors',
+                question: 'Что такое дескрипторы свойств объектов?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-accessor-properties',
+                question: 'Что такое свойства-аксессоры объектов?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-nullish-coalescing',
                 question: 'Что такое оператор нулевого слияния (??)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'В чём отличие оператора нулевого слияния (??) и оператора “ИЛИ” (||)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'javascript-function-declaration-vs-expression',
                 question: 'Разница между function declaration и function expression?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-hoisting',
                 question: 'Что такое поднятие (Hoisting)?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-closure',
                 question: 'Что такое замыкание (Closure)?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое чистая функция?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое IIFE?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'javascript-parameters-passing',
                 question: 'Как передаются параметры в функцию: по ссылке или по значению?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'recursion',
                 question: 'Что такое рекурсия?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Что значит текст max call stack size exceeded в консоли?',
+                id: 'tail-recursion-vs-regular',
+                question: 'Что такое хвостовая рекурсия и как она отличается от обычной?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'tail-recursion-optimization',
+                question: 'Как оптимизировать хвостовую рекурсию?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'function-parameter-vs-argument',
                 question: 'Разница между параметром и аргументом функции?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-this',
                 question: 'Что обозначает this в JavaScript?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-scope',
                 question: 'Что такое область видимости (Scope)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-call-apply-bind',
                 question: 'Разница между .call(), .apply() и bind()?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-bind-partial-application',
+                question: 'Как работает частичное применение аргументов с .bind()?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'partial-application-vs-currying',
+                question: 'Чем частичное применение отличается от каррирования?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-method-borrowing',
+                question: 'Что такое заимствование метода?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-prototype',
                 question: 'Что такое прототип (Prototype) объекта?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-proto-vs-prototype',
+                question: 'Чем отличается свойство __proto__ от prototype?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-object-create-setprototypeof',
+                question: 'Как работают методы Object.create() и Object.setPrototypeOf()?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-setprototypeof-performance',
+                question: 'Как влияет изменение прототипа через Object.setPrototypeOf() на производительность?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'inheritance-type-in-js',
+                question: 'Какой тип наследования в JavaScript?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'js-prototype-mechanism',
+                question: 'Как работает механизм прототипов в JavaScript?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-boolean-coercion',
                 question: 'Как превратить любой тип данных в булевый? Перечислите ложные значения в JS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Почему результат сравнения 2х объектов это false?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'javascript-shallow-vs-deep-copy',
                 question: `
                     Разница между глубокой (deep) и поверхностной (shallow) копиями объекта? Как сделать каждую из них?
                 `,
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-array-check',
                 question: 'Как проверить, является ли значение массивом?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-typeof-vs-instanceof',
                 question: 'Разница между typeof и instanceof?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между .forEach() и .map()?',
+                id: 'javascript-instanceof-limitations',
+                question: 'В каких случаях instanceof может дать ложный результат?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'immutability-in-js',
                 question: 'Плюсы и минусы иммутабельности? Как достичь иммутабельности в JS?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое Set, Map, WeakMap и WeakSet?',
+                id: 'javascript-set-vs-weakset',
+                question: 'Чем отличается Set от WeakSet?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'javascript-garbage-collector',
+                question: 'Как работает сборщик мусора?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-cyclic-references-garbage-collection',
+                question: 'Как циклические ссылки влияют на сборку мусора?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'javascript-memory-leaks',
+                question: 'Как избежать утечек памяти в JS?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'dom-event-handling',
                 question: 'Как добавить и удалить обработчик события на DOM-элемент?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'event-propagation',
                 question: 'Что такое распространение события (Event Propagation)?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'event-bubbling-vs-capturing',
+                question: 'В чем разница между всплытием (bubbling) и захватом (capturing)?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'event-delegation',
                 question: 'Что такое делегирование событий (Event Delegation)?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'preventdefault-vs-stoppropagation',
                 question: 'Разница между e.preventDefault() и e.stopPropagation()?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Как динамически добавить элемент на HTML-страницу?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Для чего используется метод .scrollIntoView()?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое AJAX?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'event-loop',
                 question: 'Что такое цикл событий (event loop) и как он работает?',
                 tags: [
-                    'easy',
+                    'hard',
                 ],
             },
             {
-                id: '',
+                id: 'microtasks-vs-macrotasks',
                 question: 'Разница между микро и макрозадачами в event loop?',
                 tags: [
-                    'easy',
+                    'hard',
                 ],
             },
             {
-                id: '',
+                id: 'microtasks-ui-optimization',
+                question: 'В каких случаях можно использовать микротаски для оптимизации UI?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'infinite-microtasks',
+                question: 'Что произойдет при бесконечном добавлении микротасков?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'browser-protection-microtasks',
+                question: 'Какие механизмы браузеры применяют для предотвращения блокировок из-за микротасков?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'callback-hell',
                 question: 'Что такое callback-функция? Что такое Callback Hell?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'promises',
                 question: 'Что такое промисы (Promises)?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Преимущества использовании промисов вместо колбэков?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'async-await',
                 question: 'Что такое async/await?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Как выполнить несколько асинхронных операций последовательно?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'first-class-functions',
                 question: 'Почему в JS функции называют объектами первого класса?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'pseudo-array-arguments',
                 question: 'Что такое псевдомассив arguments?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'host-vs-native-objects',
                 question: 'Разница между host-объектами и нативными объектами?',
                 tags: [
-                    'hard',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Почему расширение нативных JavaScript-объектов это плохая практика?',
+                id: 'data-sharing-between-tabs',
+                question: 'Каким образом можно обмениваться данными между вкладками браузера?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'security-data-sharing-tabs',
+                question: 'Как обеспечить безопасность при обмене данными между вкладками?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'cross-origin-data-sharing',
+                question: 'Каким образом можно обмениваться данными между вкладками браузера в рамках разных доменов?',
                 tags: [
                     'hard',
                 ],
             },
             {
-                id: '',
-                question: 'Каким образом можно обмениваться кодом между файлами в браузере?',
+                id: 'es-modules',
+                question: 'Как работают es modules?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'dependency-tree',
+                question: 'Что такое дерево зависимостей (dependency tree) и как оно строится?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'tree-shaking',
+                question: 'Как работает tree shaking на основе дерева зависимостей?',
                 tags: [
                     'hard',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое цепочка вызовов функций (chaining)? Как реализовать такой подход?',
+                id: 'tree-shaking-vs-deduplication',
+                question: 'Чем отличается tree shaking от дедупликации кода?',
                 tags: [
                     'hard',
                 ],
             },
             {
-                id: '',
-                question: 'Расскажите о IntersectionObserver?',
+                id: 'tree-shaking-commonjs-limitations',
+                question: 'Какие ограничения есть у tree shaking в CommonJS?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'commonjs-esmodules-mixing-issues',
+                question: 'Какие проблемы могут возникнуть при смешивании CommonJS и ES Modules?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'esm-import-stages',
+                question: 'Какие бывают стадии импорта в esm?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'esm-static-vs-dynamic-import',
+                question: 'Чем отличаются статический и динамический импорт в ESM?',
+                tags: [
+                    'hard',
+                ],
+            },
+        ],
+    },
+    {
+        subject: 'TypeScript',
+        template: 'ts',
+        questions: [
+            {
+                id: 'typescript-type-vs-interface',
+                question: 'Разница между типом (type) и интерфейсом (interface)?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-interface-declaration-merging',
+                question: 'Как ведёт себя декларативное слияние интерфейсов?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-abstract-class-vs-interface',
+                question: 'Разница между абстрактным классом (abstract class) и интерфейсом (interface)?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-enum',
+                question: 'Что такое перечисление (enum)?',
+                tags: [
+                    'easy',
+                ],
+            },
+            {
+                id: 'typescript-enum-alternatives',
+                question: 'Какие альтернативы enum есть в TypeScript?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-union-vs-intersection',
+                question: 'Разница между типами “Объединение” (|) и “Пересечение” (&)?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-generics',
+                question: 'Что такое общие типы (generic) в TypeScript?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-void-never-unknown',
+                question: 'Разница между типами void, never и unknown?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'typescript-decorators',
+                question: 'Что такое декораторы?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'typescript-decorators-reflect-metadata',
+                question: 'Как декораторы взаимодействуют с метаданными (Reflect Metadata)?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'typescript-metadata-types',
+                question: 'Какие типы метаданных обычно сохраняют?',
                 tags: [
                     'hard',
                 ],
@@ -832,339 +1050,201 @@ export default [
         template: 'react',
         questions: [
             {
-                id: '',
-                question: 'Что такое React?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'react-is-reactive',
                 question: 'Является ли React реактивным?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое Virtual DOM? Как он работает с React?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое JSX?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'react-strict-mode',
                 question: 'Что такое строгий режим в React? Его преимущества?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
+                id: 'state-vs-props',
                 question: 'Разница между состоянием(state) и пропсами(props)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое «бурение пропсов» (Prop Drilling)? Как его избежать?',
+                id: 'can-props-be-mutated',
+                question: 'Могут ли props быть изменены внутри компонента?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'react-re-render-causes',
+                question: 'Какие существуют причины ререндера в React?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-reconciliation-render',
+                question: 'Что происходит при ререндере компонента на уровне reconciliation?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'react-fiber-and-reconciliation',
+                question: 'Что такое fiber и как он связан с reconciliation?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'react-cooperative-scheduling',
+                question: 'Что такое cooperative scheduling и как это реализовано через Fiber?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'react-startTransition-useDeferredValue',
+                question: 'Как работают startTransition и useDeferredValue в контексте cooperative scheduling?',
+                tags: [
+                    'hard',
+                ],
+            },
+            {
+                id: 'react-useTransition-startTransition',
+                question: 'Как связаны useTransition и startTransition?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-startTransition-event-handlers',
+                question: 'Можно ли использовать startTransition внутри обработчиков событий?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-startTransition-user-experience',
+                question: 'Как startTransition влияет на пользовательский опыт при быстром вводе?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-useTransition-vs-startTransition',
+                question: 'В каких случаях предпочтительнее использовать useTransition вместо startTransition?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-fragment',
                 question: 'Что такое фрагмент (Fragment)? Почему фрагмент лучше, чем div обёртка?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
-                question: 'Для чего нужен атрибут key при рендере списков?',
+                id: 'react-key',
+                question: 'Для чего нужен атрибут key?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'react-list-no-keys',
+                question: 'Что произойдёт, если не указать ключи в списках?',
+                tags: [
+                    'easy',
+                ],
+            },
+            {
+                id: 'react-component-vs-container',
                 question: 'Разница между компонентом и контейнером?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между классовым и функциональным компонентами?',
+                id: 'react-container-alternatives',
+                question: `
+                    Какие альтернативы контейнерам существуют в современном React (HOCs, Render Props, custom hooks)?
+                `,
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Методы жизненного цикла компонента в React?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'react-portal',
                 question: 'Что такое портал (Portal)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'react-context',
                 question: 'Что такое контекст (Context)?',
                 tags: [
                     'easy',
                 ],
             },
             {
-                id: '',
+                id: 'react-context-pitfalls',
+                question: 'Подводные камни при частом использовании Context API?',
+                tags: [
+                    'medium',
+                ],
+            },
+            {
+                id: 'react-synthetic-events',
                 question: 'Что такое синтетические события в React?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое React хуки (Hooks)?',
+                id: 'react-ref',
+                question: 'Что такое React-ссылка (ref)? Почему не нужно использовать поиск DOM Node через document?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое React-ссылка (ref)? Как создать ссылку?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'react-setstate-function',
                 question: 'Зачем в setState() нужно передавать функцию?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Как реализовать однократное выполнение операции при начальном рендеринге?',
+                id: 'react-batching',
+                question: 'Что такое батчинг?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Разница между useEffect() и componentDidMount()?',
+                id: 'react-batching-limitations',
+                question: 'Какие есть риски или ограничения у автоматического batching?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что делает метод shouldComponentUpdate?',
+                id: 'react-children',
+                question: 'Что такое сhildren? В чём отличие между children, children() и Children?',
                 tags: [
-                    'easy',
+                    'medium',
                 ],
             },
             {
-                id: '',
-                question: 'Что такое сhildren?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Как в React реализовать двустороннее связывание данных?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
+                id: 'react-render-html',
                 question: 'Как отрендерить HTML код в React-компоненте?',
                 tags: [
                     'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между React и ReactDOM?',
-                tags: [
-                    'hard',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое PureComponent?',
-                tags: [
-                    'hard',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое React Reconciliation?',
-                tags: [
-                    'hard',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между createElement() и cloneElement()?',
-                tags: [
-                    'hard',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между memo и useMemo?',
-                tags: [
-                    'hard',
-                ],
-            },
-        ],
-    },
-    {
-        subject: 'REDUX',
-        template: 'redux',
-        questions: [
-            {
-                id: '',
-                question: 'Что такое Redux? Ключевые принципы Redux?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое редьюсер (Reducer)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между React State и Redux State?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: `
-                    Что такое middleware, для каких целей используют и какие существуют реализации в экосистеме redux?
-                `,
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Как выглядит поток данных в Redux-приложении?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Плюсы и минусы Redux?',
-                tags: [
-                    'easy',
-                ],
-            },
-        ],
-    },
-    {
-        subject: 'TypeScript',
-        template: 'ts',
-        questions: [
-            {
-                id: '',
-                question: 'Что такое TypeScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Типы в TypeScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между типом (type) и интерфейсом (interface)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между абстрактным классом (abstract class) и интерфейсом (interface)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Как TypeScript поддерживает необязательные и дефолтные параметры в функции?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое перечисление (enum)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между типами “Объединение” (|) и “Пересечение” (&)?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое общие типы (generic) в TypeScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Разница между типами void, never и unknown?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Модификаторы доступа в TypeScript?',
-                tags: [
-                    'easy',
-                ],
-            },
-            {
-                id: '',
-                question: 'Что такое декораторы?',
-                tags: [
-                    'hard',
                 ],
             },
         ],
