@@ -6,8 +6,9 @@
         "dev": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "lint:code": "concurrently \"pnpm astro check\" \"pnpm oxlint\"",
+        "lint:code": "concurrently \"pnpm astro check\" \"pnpm oxlint --ignore-path .eslintignore\"",
         "lint:styles": "stylelint **/*.{css,scss,svelte}",
+        "lint": "concurrently \"pnpm lint:code\" \"pnpm lint:styles\"",
         "format": "concurrently \"pnpm:lint:code --fix\" \"pnpm:lint:styles --fix\"",
         "analyze": "serve ./.sonda",
         "prepare": "husky || true"
@@ -15,18 +16,15 @@
     "dependencies": {
         "@astrojs/svelte": "^7.1.0",
         "@astrojs/vercel": "^8.2.0",
-        "@tailwindcss/vite": "^4.1.11",
+        "@lucide/svelte": "^0.525.0",
         "astro": "^5.10.2",
-        "tailwindcss": "^4.1.11"
+        "normalize.css": "^8.0.1"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
         "@commitlint/cli": "^19.8.1",
         "@commitlint/config-conventional": "^19.8.1",
         "concurrently": "^9.2.0",
-        "flowbite": "^3.1.2",
-        "flowbite-svelte": "^1.8.3",
-        "flowbite-svelte-icons": "^2.2.1",
         "husky": "^9.1.7",
         "lint-staged": "^16.1.2",
         "oxlint": "^1.4.0",

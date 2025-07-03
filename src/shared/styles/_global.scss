@@ -1,0 +1,123 @@
+@import url('normalize.css');
+
+html,
+body {
+    color: var(--trc-primary-text-color);
+    font-family: var(--trc-primary-font);
+    background-color: var(--trc-primary-background-color);
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    height: 100%;
+    color: var(--trc-primary-text-color);
+    font-size: 18px;
+    scroll-behavior: smooth;
+
+    &::selection {
+        color: var(--trc-primary-accent-color);
+        background-color: var(--trc-selection-color);
+    }
+}
+
+body {
+    max-height: 100dvh;
+    scrollbar-gutter: stable;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(var(--trc-scrollbar-primary-color), var(--trc-primary-text-color), var(--trc-scrollbar-primary-color));
+        border-radius: 4px
+    }
+}
+
+a,
+button,
+input {
+    &:focus-visible {
+        outline: 1px solid var(--trc-secondary-accent-color);
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--trc-primary-text-color);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@supports (-webkit-hyphens: none) and (text-align-last: right) {
+    ::after {
+        content: none;
+    }
+}
+
+.trc-app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.trc-main {
+    width: 100%;
+    height: 100%;
+    padding: 1.125rem var(--trc-main-offset) 1.125rem calc(var(--trc-sidebar-width) + var(--trc-main-offset));
+}
+
+.invisible-scroll {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.paragraph-primary {
+    font-size: 1rem;
+}
+
+.paragraph-secondary {
+    font-size: 0.875rem;
+}
+
+.paragraph-tertiary {
+    font-size: 0.75rem;
+}

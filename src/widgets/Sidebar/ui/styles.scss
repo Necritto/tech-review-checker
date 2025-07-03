@@ -1,0 +1,45 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: var(--trc-sidebar-width);
+    height: 100dvh;
+    border-right: var(--trc-border);
+}
+
+.header,
+.nav,
+.footer {
+    padding: 1rem;
+}
+
+.header {
+    color: var(--trc-primary-text-color);
+    border-bottom: var(--trc-border);
+}
+
+.subtitle {
+    margin-top: 0.25rem;
+    color: var(--trc-secondary-text-color);
+}
+
+.nav {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.link,
+.icon {
+    color: currentcolor;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.footer {
+    border-top: var(--trc-border);
+}

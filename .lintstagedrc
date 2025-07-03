@@ -1,4 +1,0 @@
-{
-    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "lint:code",
-    "**/*.{css,scss,svelte}": "lint:styles"
-}

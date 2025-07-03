@@ -2,9 +2,21 @@
     "extends": "astro/tsconfigs/strict",
     "include": [
         ".astro/types.d.ts",
-        "**/*"
+        "**/*",
+        "global.d.ts"
     ],
     "exclude": [
         "dist"
     ],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@shared/*": [ "./src/shared/*" ],
+            "@entities/*": [ "./src/entities/*" ],
+            "@features/*": [ "./src/features/*" ],
+            "@widgets/*": [ "./src/widgets/*" ],
+            "@pages/*": [ "./src/pages/*" ],
+            "@app/*": [ "./src/app/*" ]
+        }
+    }
 }

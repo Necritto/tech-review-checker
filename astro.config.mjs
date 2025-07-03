@@ -1,20 +1,33 @@
 import { defineConfig } from 'astro/config';
-
 import vercel from '@astrojs/vercel';
 import Sonda from 'sonda/astro';
+import { resolve } from 'node:path';
 
 import svelte from '@astrojs/svelte';
 
-import tailwindcss from '@tailwindcss/vite';
-
 export default defineConfig({
+    output: 'static',
     adapter: vercel(),
     integrations: [Sonda(), svelte()],
     vite: {
+        base: '/',
         build: {
             sourcemap: true
         },
-
-        plugins: [tailwindcss()],
+        resolve: {
+            alias: {
+                "@shared": resolve("./src/shared"),
+                "@entities": resolve("./src/entities"),
+                "@features": resolve("./src/features"),
+                "@widgets": resolve("./src/widgets"),
+                "@pages": resolve("./src/pages"),
+                "@app": resolve("./src/app"),
+            }
+        },
+        server: {
+            watch: {
+                usePolling: true,
+            }
+        }
     },
 });
