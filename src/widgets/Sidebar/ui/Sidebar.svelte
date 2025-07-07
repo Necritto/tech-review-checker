@@ -1,5 +1,17 @@
 <script lang="ts">
-    import { MENU_ROUTES } from "../model/constants";
+    import { MENU_ROUTES } from "@shared/model/constants";
+
+    interface SidebarProps {
+        pathname: string;
+    }
+
+    const { pathname }: SidebarProps = $props();
+
+    const handleClick = (event: MouseEvent, name: string) => {
+        if (pathname === name) {
+            event.preventDefault();
+        }
+    };
 </script>
 
 <aside class="sidebar">
@@ -8,8 +20,13 @@
         <p class="subtitle paragraph-secondary">Technical Assessment Tool</p>
     </header>
     <nav class="nav invisible-scroll">
-        {#each MENU_ROUTES as { path, title, Icon } (path)}
-            <a href={path} aria-label={title} class="link">
+        {#each Object.values(MENU_ROUTES) as { path, title, Icon } (path)}
+            <a
+                href={path}
+                aria-label={title}
+                class={["link", { active: pathname === path }]}
+                onclick={(event) => handleClick(event, path)}
+            >
                 <Icon class="icon" />
                 {title}
             </a>

@@ -7,12 +7,17 @@ import svelte from '@astrojs/svelte';
 
 export default defineConfig({
     output: 'static',
+    trailingSlash: 'never',
     adapter: vercel(),
     integrations: [Sonda(), svelte()],
     vite: {
         base: '/',
         build: {
-            sourcemap: true
+            sourcemap: true,
+            minify: true,
+            minifyHTML: true,
+            minifyCSS: true,
+            minifyJS: true,
         },
         resolve: {
             alias: {

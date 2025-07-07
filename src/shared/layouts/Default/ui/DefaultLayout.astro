@@ -1,6 +1,7 @@
 ---
 import "@shared/styles/index.scss";
-import { Sidebar } from "@widgets/Sidebar";
+
+const { pathname } = Astro.url;
 ---
 
 <!doctype html>
@@ -13,7 +14,13 @@ import { Sidebar } from "@widgets/Sidebar";
         <title>Техническое интервью</title>
     </head>
     <body class="trc-app">
-        <Sidebar />
+        {
+            Astro.slots.has("sidebar") && (
+                <Fragment
+                    set:html={Astro.slots.render("sidebar", [pathname])}
+                />
+            )
+        }
         <main class="trc-main">
             <slot />
         </main>

@@ -1,5 +1,46 @@
 ---
-import { DefaultLayout } from "@app/layouts/Default";
+import { CircleCheckBig, Clock4 } from "@lucide/svelte";
+
+import { DefaultLayout } from "@shared/layouts/Default";
+import { Sidebar } from "@widgets/Sidebar";
+import { Header, type HeaderProps } from "@widgets/Header";
+import { MENU_ROUTES } from "@shared/model/constants";
+
+import { taskState } from "@shared/store/task.svelte";
+
+const headerProps: HeaderProps = {
+    title: MENU_ROUTES.MAIN.title,
+    subtitle: "Оцените теоретические знания кандидата в различных областях",
+    Icon: MENU_ROUTES.MAIN.Icon,
+    cards: [
+        {
+            title: "Всего вопросов",
+            count: taskState.total,
+            Icon: MENU_ROUTES.MAIN.Icon,
+        },
+        {
+            title: "Выполнено",
+            count: taskState.solved,
+            Icon: CircleCheckBig,
+        },
+        {
+            title: "Оценено",
+            count: taskState.graded,
+            Icon: Clock4,
+        },
+        {
+            title: "Средняя оценка",
+            count: `${taskState.averageGrade}%`,
+            Icon: Clock4,
+        },
+    ],
+};
 ---
 
-<DefaultLayout> Questions </DefaultLayout>
+<title>Вопросы | Техническое интервью</title>
+
+<DefaultLayout>
+    {(pathname: string) => <Sidebar slot="sidebar" client:load {pathname} />}
+
+    <Header {...headerProps} />
+</DefaultLayout>

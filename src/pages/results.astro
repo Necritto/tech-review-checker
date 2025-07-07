@@ -1,5 +1,10 @@
 ---
-import { DefaultLayout } from "@app/layouts/Default";
+import { DefaultLayout } from "@shared/layouts/Default";
+import { Sidebar } from "@widgets/Sidebar";
 ---
 
-<DefaultLayout> results </DefaultLayout>
+<title>Результаты | Техническое интервью</title>
+
+<DefaultLayout>
+    {(pathname: string) => <Sidebar slot="sidebar" client:load {pathname} />}
+</DefaultLayout>

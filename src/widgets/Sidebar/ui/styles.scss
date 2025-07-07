@@ -1,3 +1,5 @@
+@use '@shared/styles/mixins' as mixins;
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -27,7 +29,10 @@
 }
 
 .nav {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    gap: 8px;
     overflow-y: auto;
 }
 
@@ -37,7 +42,28 @@
 }
 
 .link {
+    display: inline-flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem 1rem;
     text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:not(.active) {
+        @include mixins.hover {
+            background-color: var(--trc-hover-primary-color);
+        }
+    }
+}
+
+.active {
+    color: var(--trc-primary-background-color);
+    background-color: var(--trc-secondary-accent-color);
+}
+
+.icon {
+    flex-shrink: 0;
 }
 
 .footer {

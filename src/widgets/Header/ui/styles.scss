@@ -1,0 +1,20 @@
+.title {
+    display: inline-flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.icon {
+    display: inline-flex;
+    color: var(--trc-secondary-accent-color);
+
+    :global(.lucide-icon) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.subtitle {
+    margin-top: 4px;
+    color: var(--trc-secondary-text-color);
+}
