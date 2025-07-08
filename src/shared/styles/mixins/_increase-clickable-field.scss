@@ -1,5 +1,7 @@
-@mixin increase-clickable-field($size) {
-    position: relative;
+@mixin increase-clickable-field($size, $relative: true) {
+    @if $relative {
+        position: relative;
+    }
 
     &::before {
         position: absolute;

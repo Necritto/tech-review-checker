@@ -1,12 +1,13 @@
 ---
-import { CircleCheckBig, Clock4 } from "@lucide/svelte";
+import { CircleCheckBig, ChartPie, Sigma } from "@lucide/svelte";
 
 import { DefaultLayout } from "@shared/layouts/Default";
 import { Sidebar } from "@widgets/Sidebar";
 import { Header, type HeaderProps } from "@widgets/Header";
 import { MENU_ROUTES } from "@shared/model/constants";
-
 import { taskState } from "@shared/store/task.svelte";
+
+import { Question } from "@entities/Question";
 
 const headerProps: HeaderProps = {
     title: MENU_ROUTES.MAIN.title,
@@ -26,14 +27,49 @@ const headerProps: HeaderProps = {
         {
             title: "Оценено",
             count: taskState.graded,
-            Icon: Clock4,
+            Icon: ChartPie,
         },
         {
             title: "Средняя оценка",
             count: `${taskState.averageGrade}%`,
-            Icon: Clock4,
+            Icon: Sigma,
         },
     ],
+    filters: [
+        {
+            id: "categories",
+            title: "Категории",
+            options: [
+                {
+                    id: "1",
+                    label: "HTML",
+                    value: "html",
+                },
+                {
+                    id: "2",
+                    label: "JS",
+                    value: "js",
+                },
+            ],
+        },
+        {
+            id: "status",
+            title: "Статус",
+            options: [
+                {
+                    id: "3",
+                    label: "Решённые",
+                    value: "passing",
+                },
+                {
+                    id: "4",
+                    label: "не решённые",
+                    value: "failure",
+                },
+            ],
+        },
+    ],
+    onChangeFilter: console.log,
 };
 ---
 
@@ -43,4 +79,8 @@ const headerProps: HeaderProps = {
     {(pathname: string) => <Sidebar slot="sidebar" client:load {pathname} />}
 
     <Header {...headerProps} />
+
+    <section class="content">
+        <Question client:load />
+    </section>
 </DefaultLayout>

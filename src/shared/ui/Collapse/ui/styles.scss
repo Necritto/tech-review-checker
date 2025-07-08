@@ -1,0 +1,12 @@
+.collapse {
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 100%;
+    opacity: 0;
+    transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+
+    &--open {
+        grid-template-rows: 1fr;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,47 @@
+@use '@shared/styles/mixins' as mixins;
+
+.plate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--trc-surface-background-color);
+    border: var(--trc-border);
+    border-radius: 0.75rem;
+}
+
+.collapse {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    z-index: var(--trc-index-1);
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    color: var(--trc-secondary-text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    @include mixins.increase-clickable-field(5px, false);
+
+    @include mixins.hover {
+        color: var(--trc-primary-accent-color);
+    }
+}
+
+:global(.inner) {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.open {
+    transform: rotate(180deg);
+}

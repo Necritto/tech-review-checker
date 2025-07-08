@@ -121,3 +121,14 @@ select:-webkit-autofill:focus {
 .paragraph-tertiary {
     font-size: 0.75rem;
 }
+
+.separator {
+    width: 100%;
+    height: 2px;
+    margin: 1.5rem 0;
+    background-color: var(--trc-border-color);
+}
+
+.content {
+    height: 1000vh;
+}

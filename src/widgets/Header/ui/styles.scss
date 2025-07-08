@@ -1,3 +1,11 @@
+.header {
+    position: sticky;
+    top: var(--trc-main-offset);
+    z-index: var(--trc-index-2);
+    background-color: var(--trc-primary-background-color);
+    box-shadow: 0 calc(var(--trc-main-offset) * -1) 0 0 var(--trc-primary-background-color);
+}
+
 .title {
     display: inline-flex;
     gap: 0.75rem;
@@ -8,13 +16,100 @@
     display: inline-flex;
     color: var(--trc-secondary-accent-color);
 
-    :global(.lucide-icon) {
-        width: 28px;
-        height: 28px;
+    &--primary {
+        :global(.lucide-icon) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &--secondary {
+        :global(.lucide-icon) {
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
 .subtitle {
     margin-top: 4px;
     color: var(--trc-secondary-text-color);
+}
+
+.slots {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.slot-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 0.5rem;
+}
+
+.slot-title {
+    color: var(--trc-secondary-text-color);
+}
+
+.slot-count {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+:global(.slot) {
+    &:nth-of-type(1) .slot-icon {
+        background-color: var(--trc-info-primary-color);
+    }
+
+    &:nth-of-type(2) .slot-icon {
+        background-color: var(--trc-success-primary-color);
+    }
+
+    &:nth-of-type(3) .slot-icon {
+        background-color: var(--trc-info-secondary-color);
+    }
+
+    &:nth-of-type(4) .slot-icon {
+        background-color: var(--trc-warning-primary-color);
+    }
+}
+
+.filters {
+    margin-top: 1.5rem;
+
+    :global(.filter-wrapper) {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+.selects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+    margin-top: 4px;
+    padding: 0.45rem 0.55rem;
+    color: var(--trc-primary-text-color);
+    background-color: var(--trc-primary-background-color);
+    border: var(--trc-border);
+    border-radius: 0.5rem;
+
+    &:focus-visible {
+        outline: 2px solid var(--trc-secondary-accent-color);
+        outline-offset: 2px;
+    }
+}
+
+.select-wrapper {
+    width: 100%;
+    max-width: calc(100dvw / 4);
 }
