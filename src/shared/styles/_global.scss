@@ -97,9 +97,10 @@ select:-webkit-autofill:focus {
 }
 
 .trc-main {
-    width: 100%;
+    width: calc(100% - var(--trc-sidebar-width));
     height: 100%;
     padding: 1.125rem var(--trc-main-offset) 1.125rem calc(var(--trc-sidebar-width) + var(--trc-main-offset));
+    overflow-x: hidden;
 }
 
 .invisible-scroll {
@@ -127,8 +128,4 @@ select:-webkit-autofill:focus {
     height: 2px;
     margin: 1.5rem 0;
     background-color: var(--trc-border-color);
-}
-
-.content {
-    height: 1000vh;
 }

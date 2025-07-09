@@ -9,6 +9,8 @@ import { taskState } from "@shared/store/task.svelte";
 
 import { Question } from "@entities/Question";
 
+import { firebaseRepository } from "@shared/api/firebase";
+
 const headerProps: HeaderProps = {
     title: MENU_ROUTES.MAIN.title,
     subtitle: "Оцените теоретические знания кандидата в различных областях",
@@ -71,6 +73,8 @@ const headerProps: HeaderProps = {
     ],
     onChangeFilter: console.log,
 };
+
+const questions = await firebaseRepository.getAll();
 ---
 
 <title>Вопросы | Техническое интервью</title>
@@ -82,5 +86,6 @@ const headerProps: HeaderProps = {
 
     <section class="content">
         <Question client:load />
+        {JSON.stringify(questions, null, 2)}
     </section>
 </DefaultLayout>
