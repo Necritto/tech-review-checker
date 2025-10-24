@@ -1,20 +1,7 @@
-import {fileURLToPath, URL} from 'url';
-import {defineConfig} from 'vite';
-import {sveltekit} from '@sveltejs/kit/vite';
-import svgLoader from 'vite-svg-loader';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-    plugins: [sveltekit(), svgLoader()],
-    css: {
-        devSourcemap: true,
-    },
-    server: {
-        port: 3000,
-        host: '0.0.0.0',
-    },
-    resolve: {
-        alias: [
-            {find: '@styles', replacement: fileURLToPath(new URL('./src/shared/styles', import.meta.url))},
-        ],
-    },
+    plugins: [tsconfigPaths(), react()],
 });

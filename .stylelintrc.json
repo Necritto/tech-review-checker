@@ -46,6 +46,7 @@
         "selector-pseudo-class-no-unknown": [
             true,
             { "ignorePseudoClasses": [ "global" ] }
-        ]
+        ],
+        "nesting-selector-no-missing-scoping-root": null
     }
 }
