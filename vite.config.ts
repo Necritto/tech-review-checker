@@ -24,19 +24,27 @@ export default defineConfig({
     },
     build: {
         rolldownOptions: {
+            treeshake: {
+                moduleSideEffects: (id) => {
+                    if (/remark|rehype/.test(id)) {
+                        return true;
+                    }
+
+                    return undefined;
+                },
+            },
             output: {
                 advancedChunks: {
                     minSize: 20_000,
                     groups: [
                         {
                             name: "markdown-vendor",
-                            test: /node_modules[\\/](react-markdown|remark|rehype)/,
-                            priority: 15,
-                            maxSize: MAX_CHUNK_SIZE,
+                            test: /node_modules[\\/](react-markdown|remark)/,
+                            priority: 20,
                         },
                         {
                             name: "highlight-vendor",
-                            test: /node_modules[\\/]highlight\.js/,
+                            test: /node_modules[\\/](rehype|highlight\.js)/,
                             priority: 15,
                         },
                         {
