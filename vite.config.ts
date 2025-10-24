@@ -3,6 +3,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+const MAX_CHUNK_SIZE = 200_000;
+
 export default defineConfig({
     plugins: [tsconfigPaths(), react()],
     css: {
@@ -19,5 +21,39 @@ export default defineConfig({
     server: {
         port: 3000,
         host: "0.0.0.0",
+    },
+    build: {
+        rolldownOptions: {
+            output: {
+                advancedChunks: {
+                    minSize: 20_000,
+                    groups: [
+                        {
+                            name: "markdown-vendor",
+                            test: /node_modules[\\/](react-markdown|remark|rehype)/,
+                            priority: 15,
+                            maxSize: MAX_CHUNK_SIZE,
+                        },
+                        {
+                            name: "highlight-vendor",
+                            test: /node_modules[\\/]highlight\.js/,
+                            priority: 15,
+                        },
+                        {
+                            name: "react-vendor",
+                            test: /node_modules[\\/]react/,
+                            priority: 10,
+                            maxSize: MAX_CHUNK_SIZE,
+                        },
+                        {
+                            name: "vendor",
+                            test: /node_modules/,
+                            priority: 5,
+                            maxSize: MAX_CHUNK_SIZE,
+                        },
+                    ],
+                },
+            },
+        },
     },
 });
