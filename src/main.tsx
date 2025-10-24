@@ -4,7 +4,9 @@ import { createRoot } from "react-dom/client";
 import { QueryProvider } from "@app/providers/query";
 import { RouterProvider } from "@app/providers/router";
 
-const root = createRoot(document.getElementById("app")!);
+import "@shared/styles/index.scss";
+
+const root = createRoot(document.getElementById("trc-app")!);
 
 root.render(
     <StrictMode>

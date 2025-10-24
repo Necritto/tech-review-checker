@@ -8,6 +8,7 @@ import { QuestionsPage } from "@pages/questions";
 import { ExercisesPage } from "@pages/exercises";
 
 import { DefaultLayout } from "@app/layouts/default";
+import { MENU_ROUTES } from "@shared/lib/constants/routes";
 
 const rootRoute = createRootRoute({
     component: DefaultLayout,
@@ -15,13 +16,13 @@ const rootRoute = createRootRoute({
 
 const indexRoute = createRoute({
     getParentRoute: () => rootRoute,
-    path: "/",
+    path: MENU_ROUTES.QUESTIONS.path,
     component: QuestionsPage,
 });
 
 const aboutRoute = createRoute({
     getParentRoute: () => rootRoute,
-    path: "/exercises",
+    path: MENU_ROUTES.EXERCISES.path,
     component: ExercisesPage,
 });
 

@@ -100,7 +100,6 @@ select:-webkit-autofill:focus {
     width: calc(100% - var(--trc-sidebar-width));
     height: 100%;
     padding: 1.125rem var(--trc-main-offset) 1.125rem calc(var(--trc-sidebar-width) + var(--trc-main-offset));
-    overflow-x: hidden;
 }
 
 .invisible-scroll {

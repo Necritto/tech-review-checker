@@ -1,30 +1,14 @@
-import { Link, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { Outlet } from "@tanstack/react-router";
 
-import styles from "./styles.module.scss";
+import { Sidebar } from "@widgets/sidebar";
 
 export function DefaultLayout() {
     return (
-        <section>
-            <header>
-                <Link
-                    to="/"
-                    activeProps={{ className: styles.active }}
-                    activeOptions={{ exact: true }}
-                >
-                    Вопросы
-                </Link>
-                <Link
-                    to="/exercises"
-                    activeProps={{ className: styles.active }}
-                >
-                    Задачи
-                </Link>
-            </header>
-            <Outlet />
-            <ReactQueryDevtools buttonPosition="bottom-left" />
-            <TanStackRouterDevtools position="bottom-right" />
+        <section className="trc-app">
+            <Sidebar />
+            <main className="trc-main">
+                <Outlet />
+            </main>
         </section>
     );
 }
