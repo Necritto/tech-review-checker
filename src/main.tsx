@@ -1,17 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider } from "@tanstack/react-router";
 
-import { router } from "@app/router";
+import { QueryProvider } from "@app/providers/query";
+import { RouterProvider } from "@app/providers/router";
 
-const rootElement = document.getElementById("app")!;
+const root = createRoot(document.getElementById("app")!);
 
-if (!rootElement.innerHTML) {
-    const root = createRoot(rootElement);
-
-    root.render(
-        <StrictMode>
-            <RouterProvider router={router} />
-        </StrictMode>
-    );
-}
+root.render(
+    <StrictMode>
+        <QueryProvider>
+            <RouterProvider />
+        </QueryProvider>
+    </StrictMode>
+);
