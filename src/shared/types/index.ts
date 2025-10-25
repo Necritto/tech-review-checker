@@ -7,6 +7,8 @@ export type DetailedProps<
     E extends React.HTMLAttributes<A> = React.HTMLAttributes<A>
 > = React.DetailedHTMLProps<E, A>;
 
+export type Nullable<T> = T | null;
+
 export type ObjectValues<T> = T[keyof T];
 
 export interface Questions {

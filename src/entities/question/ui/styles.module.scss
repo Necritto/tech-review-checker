@@ -1,0 +1,18 @@
+.component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.button {
+    padding: 12px 0;
+    color: currentcolor;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s ease;
+
+    @include mixins.hover {
+        color: var(--trc-secondary-accent-color);
+    }
+}

@@ -99,6 +99,7 @@ select:-webkit-autofill:focus {
 .trc-app {
     display: flex;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .trc-main {

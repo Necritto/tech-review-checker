@@ -5,9 +5,11 @@ import { ChevronDown } from "lucide-react";
 import { type DetailedProps, type Questions } from "@shared/types";
 
 import { Plate } from "@shared/ui/plate";
-import { Button } from "../button";
 import { Collapse } from "@shared/ui/collapse";
+import { List } from "@shared/ui/list";
+import { Question } from "@entities/question";
 
+import { Button } from "../button";
 import styles from "./styles.module.scss";
 
 export interface SubjectProps extends DetailedProps<HTMLDivElement> {
@@ -36,7 +38,19 @@ export function Subject({
             }
         >
             <Collapse open={isOpen} className={styles.content}>
-                {JSON.stringify(questions)}
+                <List>
+                    {questions.questions.map(({ id, question, tags }) => ({
+                        id,
+                        slot: (
+                            <Question
+                                id={id}
+                                template={questions.template}
+                                question={question}
+                                tags={tags}
+                            />
+                        ),
+                    }))}
+                </List>
             </Collapse>
         </Plate>
     );
