@@ -1,0 +1,21 @@
+.component {
+    position: relative;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+
+    &--open {
+        z-index: 0;
+        grid-template-rows: 1fr;
+        overflow: visible;
+        opacity: 1;
+    }
+}
+
+.content {
+    min-height: 0
+}

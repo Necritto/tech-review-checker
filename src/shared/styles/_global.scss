@@ -38,6 +38,11 @@ body {
 }
 
 a,
+button {
+    cursor: pointer;
+}
+
+a,
 button,
 input {
     &:focus-visible {

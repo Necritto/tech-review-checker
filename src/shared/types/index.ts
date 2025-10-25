@@ -2,10 +2,10 @@ import type React from "react";
 
 import type { TAG_VARIANTS } from "@shared/lib/constants/tags";
 
-export type DetailedProps<A> = React.DetailedHTMLProps<
-    React.HTMLAttributes<A>,
-    A
->;
+export type DetailedProps<
+    A,
+    E extends React.HTMLAttributes<A> = React.HTMLAttributes<A>
+> = React.DetailedHTMLProps<E, A>;
 
 export type ObjectValues<T> = T[keyof T];
 

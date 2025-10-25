@@ -1,0 +1,8 @@
+.component {
+    background-color: var(--trc-surface-background-color);
+    border-radius: 12px;
+}
+
+.header > :first-child {
+    padding: 20px;
+}

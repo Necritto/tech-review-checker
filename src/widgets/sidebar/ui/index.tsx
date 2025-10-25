@@ -17,7 +17,7 @@ export function Sidebar(): React.JSX.Element {
             </header>
             <nav className={cn(styles.nav, "invisible-scroll")}>
                 {Object.values(MENU_ROUTES).map(({ path, title, Icon }) => (
-                    <>
+                    <React.Fragment key={path}>
                         <Link
                             to={path}
                             activeProps={{ className: styles.active }}
@@ -27,7 +27,7 @@ export function Sidebar(): React.JSX.Element {
                             <Icon className={styles.icon} />
                             {title}
                         </Link>
-                    </>
+                    </React.Fragment>
                 ))}
             </nav>
             <footer className={styles.footer}>
