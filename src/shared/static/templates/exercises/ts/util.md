@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /**
@@ -34,15 +31,7 @@ type Output3 = PartialFilter<Input, "kek">;
  */
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
@@ -51,7 +40,3 @@ type PartialFilter<Type, Props extends keyof Type> = {
     [Property in keyof Type as Exclude<Property, Props>]+?: Type[Property];
 };
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

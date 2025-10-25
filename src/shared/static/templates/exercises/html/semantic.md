@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <!--
@@ -39,15 +36,7 @@
 </html>
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <!-- Ответ -->
@@ -91,7 +80,3 @@
     </body>
 </html>
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

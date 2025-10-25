@@ -1,0 +1,50 @@
+$width: 60vw;
+$header-height: 55px;
+$padding: 16px;
+
+.component {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: var(--trc-index-6);
+    width: 100%;
+    max-width: $width;
+    height: 100vh;
+    background-color: var(--trc-surface-background-color);
+    box-shadow: var(--trc-box-shadow);
+}
+
+.backdrop {
+    position: absolute;
+    left: -100%;
+    width: $width;
+    height: 100%;
+    background-color: var(--trc-backdrop-background-color);
+}
+
+.close {
+    color: currentcolor;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease;
+
+    @include mixins.hover {
+        transform: scale(1.2);
+    }
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: $header-height;
+    padding: 12px;
+    border-bottom: var(--trc-border);
+}
+
+.template {
+    height: calc(100% + $padding - $header-height * 2);
+    padding: $padding $padding 0;
+    overflow-y: auto;
+}

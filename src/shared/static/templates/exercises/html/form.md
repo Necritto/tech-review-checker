@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <!--
@@ -35,15 +32,7 @@
 </div>
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <!-- Ответ -->
@@ -109,7 +98,3 @@
     <button type="submit" class="submit-btn">Зарегистрироваться</button>
 </form>
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

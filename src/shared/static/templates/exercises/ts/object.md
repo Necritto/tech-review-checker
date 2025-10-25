@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /**
@@ -19,15 +16,7 @@ const value1: ValueType = 1; // Success
 const value2: ValueType = 4; // Error
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
@@ -40,7 +29,3 @@ const targetObject = {
 
 type ValueType = (typeof targetObject)[keyof typeof targetObject];
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

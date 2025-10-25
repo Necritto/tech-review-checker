@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -63,15 +60,7 @@ function TodoApp() {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -153,7 +142,3 @@ function TodoApp() {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

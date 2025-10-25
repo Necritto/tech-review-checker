@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -29,15 +26,7 @@ console.log(`Скорость car: ${car.speed}`); // Ожидаем 80
 console.log(`Скорость newCar: ${newCar.speed}`); // Ожидаем 100
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -62,7 +51,3 @@ newCar.speed = 100;
 console.log(`Скорость car: ${car.speed}`); // Ожидаем 80
 console.log(`Скорость newCar: ${newCar.speed}`); // Ожидаем 100
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <div class="container">
@@ -37,21 +34,9 @@ div.text {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 <!-- Ответ -->
 
--   1.1 Текст будет оранжевым
--   1.2 Жёлтый
-
-&nbsp;
-&nbsp;
-&nbsp;
+- 1.1 Текст будет оранжевым
+- 1.2 Жёлтый

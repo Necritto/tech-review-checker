@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -40,15 +37,7 @@ function log(fn) {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -82,7 +71,3 @@ function log(fn) {
     };
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

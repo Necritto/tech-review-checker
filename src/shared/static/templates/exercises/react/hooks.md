@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -35,15 +32,7 @@ function Timer() {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -82,7 +71,3 @@ function Timer() {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

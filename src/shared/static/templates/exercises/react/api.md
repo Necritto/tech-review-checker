@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -36,15 +33,7 @@ function UserList() {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -93,7 +82,3 @@ function UserList() {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

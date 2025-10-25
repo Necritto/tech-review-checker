@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -46,15 +43,7 @@ console.log(userStats.userCount); // Ожидаем 5
 console.log(userStats._userCount); // Ожидаем 5
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -105,7 +94,3 @@ userStats.userCount = 5;
 console.log(userStats.userCount);
 console.log(userStats._userCount);
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /**
@@ -13,22 +10,10 @@ type TupleType = any;
 const array: TupleType = [1, "String", true, false, true];
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
 
 type TupleType = [number, string, ...boolean[]];
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -33,15 +30,7 @@ console.log(user.settings === newSettings); // Ожидаем false
 console.log(user.roles.includes("viewer")); // Ожидаем false
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -72,7 +61,3 @@ console.log(user.roles.includes("viewer")); // false (исходный user не
 console.log(updatedUser.roles.includes("viewer")); // true (новый updatedUser изменен)
 console.log(user.roles === updatedUser.roles); // false (массив roles скопирован)
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

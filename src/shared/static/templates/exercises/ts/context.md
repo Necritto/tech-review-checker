@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Объясните, почему этот код не вызывает ошибку компилятора, но ломается в runtime */
@@ -29,15 +26,7 @@ user.paymentDateCorrect(); // Success
 user.paymentDateArrow(); // Success
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
@@ -54,7 +43,3 @@ class Payment {
     };
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

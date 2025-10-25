@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -20,15 +17,7 @@ function Component() {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -49,7 +38,3 @@ function Component() {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

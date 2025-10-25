@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```scss
 /**
@@ -19,15 +16,7 @@
 @include add-padding;
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```scss
 @mixin add-padding($size: 10) {

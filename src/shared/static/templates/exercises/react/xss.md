@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -26,15 +23,7 @@ function CommentsList({ comments }) {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -71,7 +60,3 @@ function CommentsList({ comments }) {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

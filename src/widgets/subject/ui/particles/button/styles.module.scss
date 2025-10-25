@@ -1,0 +1,17 @@
+.component {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: var(--trc-secondary-accent-color);
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+
+    @include mixins.hover {
+        background-color: var(--trc-hover-primary-color);
+    }
+}

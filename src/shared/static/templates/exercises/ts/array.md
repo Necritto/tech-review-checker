@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /**
@@ -12,22 +9,10 @@ type ArrayType = any;
 const test: ArrayType = [1, [2, [3]], [4, 5], [[[[[6]]]]]];
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
 
 type ArrayType<T> = T | ArrayType<T>[];
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

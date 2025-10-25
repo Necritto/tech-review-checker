@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```html
 <div class="container">
@@ -41,15 +38,7 @@
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```css
 /* Ответ */
@@ -59,7 +48,3 @@
     z-index: 11; /** Поднять z-index для родительского контекста наложения */
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

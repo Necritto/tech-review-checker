@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -25,15 +22,7 @@ const finalResult = calc.add(5).multiply(2).getResult(); // Ошибка!
 console.log(finalResult); // Ожидаем 10
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -56,7 +45,3 @@ const calc = {
 const finalResult = calc.add(5).multiply(2).getResult();
 console.log(finalResult); // Ожидаем 10
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

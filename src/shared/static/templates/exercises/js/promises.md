@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -33,15 +30,7 @@ loadAllData([500, 300, 700]);
 console.log("Процесс загрузки инициирован.");
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -84,7 +73,3 @@ async function loadAllData(delays, index = 0, results = []) {
     return await loadAllData(delays, index + 1, results);
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

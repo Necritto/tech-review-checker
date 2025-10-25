@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /**
@@ -26,15 +23,7 @@ function App() {
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```jsx
 /** Ответ */
@@ -74,7 +63,3 @@ function App() {
     );
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

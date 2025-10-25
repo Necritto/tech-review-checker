@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```scss
 /**
@@ -26,15 +23,7 @@
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```scss
 /** Ответ */
@@ -57,7 +46,3 @@
     font-weight: bold;
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

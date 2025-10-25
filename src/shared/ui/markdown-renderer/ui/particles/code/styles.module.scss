@@ -1,0 +1,14 @@
+.component {
+    position: relative;
+    margin-bottom: 0.5rem;
+    white-space: pre-line;
+}
+
+.copy {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: currentcolor;
+    background-color: transparent;
+    border: none;
+}

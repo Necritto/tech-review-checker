@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -22,15 +19,7 @@ const user = {
 user.greet();
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -60,7 +49,3 @@ const user = {
 
 user.greet(); // Вывод: Привет, меня зовут Alex.
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

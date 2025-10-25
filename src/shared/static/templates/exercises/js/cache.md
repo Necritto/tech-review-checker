@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -51,15 +48,7 @@ setTimeout(() => {
 }, 2000);
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -100,7 +89,3 @@ class SimpleCache {
     }
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

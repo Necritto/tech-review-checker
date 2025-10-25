@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /**
@@ -18,15 +15,7 @@ getProp(target, "a"); // Success
 getProp(target, "z"); // Error
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```ts
 /** Ответ */
@@ -35,7 +24,3 @@ function getProp<T>(obj: T, key: keyof T) {
     return obj[key];
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

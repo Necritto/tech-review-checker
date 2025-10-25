@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```css
 /*
@@ -57,15 +54,7 @@
 }
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```css
 /* Ответ */
@@ -99,7 +88,3 @@
     }
 }
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

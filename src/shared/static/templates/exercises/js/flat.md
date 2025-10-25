@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /**
@@ -20,15 +17,7 @@ const nestedArray = [
 console.log(nestedArray.flatPolyfill(8)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 ---
-
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 /** Ответ */
@@ -51,7 +40,3 @@ Array.prototype.flatPolyfill = function (depth) {
     return flattened;
 };
 ```
-
-&nbsp;
-&nbsp;
-&nbsp;

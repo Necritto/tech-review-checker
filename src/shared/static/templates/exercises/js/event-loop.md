@@ -1,6 +1,3 @@
-&nbsp;
-&nbsp;
-&nbsp;
 
 ```js
 function timeouts() {
@@ -35,12 +32,4 @@ function timeouts() {
 // timeouts();
 ```
 
-&nbsp;
-&nbsp;
-&nbsp;
-
 > Ответ: 2 3 10 1 4 5 6 7 9 11
-
-&nbsp;
-&nbsp;
-&nbsp;

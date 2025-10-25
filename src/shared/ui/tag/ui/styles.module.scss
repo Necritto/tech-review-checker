@@ -1,0 +1,23 @@
+.component {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color:var(--trc-primary-background-color);
+    border: var(--trc-border);
+    border-radius: 6px;
+
+    &--easy {
+        color: var(--trc-success-primary-color);
+    }
+
+    &--medium {
+        color: var(--trc-other-accent-color);
+    }
+
+    &--hard {
+        color:var(--trc-error-color);
+    }
+}
