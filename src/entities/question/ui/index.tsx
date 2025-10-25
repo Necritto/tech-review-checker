@@ -12,7 +12,12 @@ import { drawerService } from "@shared/ui/drawer";
 import { getTemplateMarkdown } from "@shared/static";
 
 import styles from "./styles.module.scss";
-import { MarkdownRenderer } from "@shared/ui/markdown-renderer";
+
+const MarkdownRenderer = React.lazy(() =>
+    import("@shared/ui/markdown-renderer").then((module) => ({
+        default: module.MarkdownRenderer,
+    }))
+);
 
 export type QuestionProps = Omit<
     DetailedProps<HTMLDivElement>,
@@ -33,7 +38,11 @@ export function Question(props: Readonly<QuestionProps>): React.JSX.Element {
             fileName: id,
         });
 
-        drawerService.open(<MarkdownRenderer content={md} />);
+        drawerService.open(
+            <React.Suspense>
+                <MarkdownRenderer content={md} />
+            </React.Suspense>
+        );
     };
 
     return (
