@@ -3,6 +3,7 @@ import cn from "classnames";
 
 import {
     type DetailedProps,
+    type Folders,
     type Question,
     type Questions,
 } from "@shared/types";
@@ -15,18 +16,19 @@ import { MarkdownRenderer } from "@shared/ui/markdown-renderer";
 
 export type QuestionProps = Omit<
     DetailedProps<HTMLDivElement>,
-    "children" | "id"
+    "children" | "id" | "type"
 > &
     Question & {
+        type: Folders;
         template: Questions["template"];
     };
 
 export function Question(props: Readonly<QuestionProps>): React.JSX.Element {
-    const { id, template, question, tags, className, ...rest } = props;
+    const { id, template, type, question, tags, className, ...rest } = props;
 
     const handleShowAnswer = async () => {
         const md = await getTemplateMarkdown({
-            folder: "questions",
+            folder: type,
             subfolder: template,
             fileName: id,
         });

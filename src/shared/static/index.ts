@@ -1,11 +1,16 @@
 import { Cache } from "@shared/lib/cache";
+import {
+    type ExercisesSubfolders,
+    type Folders,
+    type QuestionsSubfolders,
+} from "@shared/types";
 
 export { default as questions } from "./questions";
 export { default as exercises } from "./exercises";
 
 interface GetTemplateProps {
-    folder: string;
-    subfolder: string;
+    folder: Folders;
+    subfolder: QuestionsSubfolders | ExercisesSubfolders;
     fileName: string;
 }
 

@@ -209,29 +209,6 @@ export default [
         ],
     },
     {
-        subject: "Redux",
-        template: "redux",
-        questions: [
-            {
-                id: "reducer",
-                question: "Анализ ошибок в Redux Toolkit reducer",
-                tags: ["easy"],
-            },
-            {
-                id: "middleware",
-                question:
-                    "Анализ и исправление ошибок в кастомной Redux middleware с асинхронной логикой",
-                tags: ["easy"],
-            },
-            {
-                id: "rtk",
-                question:
-                    "Анализ и исправление ошибок при использовании RTK Query для получения списка пользователей",
-                tags: ["easy"],
-            },
-        ],
-    },
-    {
         subject: "Общие задачи",
         template: "common",
         questions: [
