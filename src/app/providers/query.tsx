@@ -3,7 +3,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 
 import { queryClient } from "@shared/api/query-client";
 
-export function QueryProvider({ children }: React.PropsWithChildren) {
+export function QueryProvider({ children }: Readonly<React.PropsWithChildren>) {
     return (
         <QueryClientProvider client={queryClient}>
             {children}

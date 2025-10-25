@@ -9,9 +9,7 @@ export interface CollapseProps extends DetailedProps<HTMLDivElement> {
     open?: boolean;
 }
 
-export function Collapse(
-    props: Readonly<React.PropsWithChildren<CollapseProps>>
-): React.JSX.Element {
+export function Collapse(props: Readonly<CollapseProps>): React.JSX.Element {
     const { open = false, children, className, ...rest } = props;
 
     return (

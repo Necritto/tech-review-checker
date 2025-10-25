@@ -9,9 +9,7 @@ export interface PlateProps extends DetailedProps<HTMLDivElement> {
     headerSlot?: React.ReactNode;
 }
 
-export function Plate(
-    props: Readonly<React.PropsWithChildren<PlateProps>>
-): React.JSX.Element {
+export function Plate(props: Readonly<PlateProps>): React.JSX.Element {
     const { headerSlot, children, className, ...rest } = props;
 
     return (
