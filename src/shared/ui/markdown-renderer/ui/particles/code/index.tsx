@@ -6,24 +6,18 @@ import { Copy } from "lucide-react";
 import { type DetailedProps } from "@shared/types";
 import { copyToClipboard } from "@shared/lib/copy-to-clipboard";
 
+import { extractText } from "../../../lib/extract-text";
 import styles from "./styles.module.scss";
 
 export interface CodeProps extends DetailedProps<HTMLSpanElement> {
-    content: string;
     withCodeCopy?: boolean;
 }
 
 export function Code(props: Readonly<CodeProps>): React.JSX.Element {
-    const {
-        children,
-        content,
-        className,
-        withCodeCopy = false,
-        ...rest
-    } = props;
+    const { children, className, withCodeCopy = false, ...rest } = props;
 
     const handleCopy = async () => {
-        const { message } = await copyToClipboard(content);
+        const { message } = await copyToClipboard(extractText(children));
         toast.success(message);
     };
 

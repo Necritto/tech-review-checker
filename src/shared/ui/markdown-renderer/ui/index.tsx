@@ -23,13 +23,7 @@ export function MarkdownRenderer({
             components={{
                 p: Paragraph,
                 code(props) {
-                    return (
-                        <Code
-                            {...props}
-                            content={content}
-                            withCodeCopy={withCodeCopy}
-                        />
-                    );
+                    return <Code {...props} withCodeCopy={withCodeCopy} />;
                 },
             }}
         >
