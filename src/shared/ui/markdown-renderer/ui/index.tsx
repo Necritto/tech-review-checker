@@ -9,10 +9,12 @@ import { Code } from "./particles/code";
 
 export interface MarkdownRendererProps {
     content: string;
+    withCodeCopy?: boolean;
 }
 
 export function MarkdownRenderer({
     content,
+    withCodeCopy,
 }: Readonly<MarkdownRendererProps>): React.JSX.Element {
     return (
         <Markdown
@@ -21,7 +23,13 @@ export function MarkdownRenderer({
             components={{
                 p: Paragraph,
                 code(props) {
-                    return <Code {...props} content={content} />;
+                    return (
+                        <Code
+                            {...props}
+                            content={content}
+                            withCodeCopy={withCodeCopy}
+                        />
+                    );
                 },
             }}
         >

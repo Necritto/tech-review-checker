@@ -10,6 +10,7 @@ import {
 import { Tag } from "@shared/ui/tag";
 import { drawerService } from "@shared/ui/drawer";
 import { getTemplateMarkdown } from "@shared/static";
+import { FOLDERS } from "@shared/lib/constants/templates";
 
 import styles from "./styles.module.scss";
 
@@ -40,7 +41,10 @@ export function Question(props: Readonly<QuestionProps>): React.JSX.Element {
 
         drawerService.open(
             <React.Suspense>
-                <MarkdownRenderer content={md} />
+                <MarkdownRenderer
+                    content={md}
+                    withCodeCopy={type === FOLDERS.EXERCISES}
+                />
             </React.Suspense>
         );
     };
