@@ -12,3 +12,9 @@
     background-color: transparent;
     border: none;
 }
+
+:global(.hljs-comment) {
+    display: inline-block;
+    max-width: 50vw;
+    white-space: normal;
+}
