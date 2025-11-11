@@ -1,35 +1,41 @@
 
 ```js
+
 function timeouts() {
+  setTimeout(() => {
+    console.log('1');
+  }, 0);
+
+  console.log('2');
+
+  new Promise((resolve, reject) => {
+    console.log('3');
+
     setTimeout(() => {
-        console.log("1");
-    }, 0);
+      console.log('4');
+      resolve('5');
+      reject('6');
+      console.log('7');
+    });
+  })
+    .finally(() => {
+      console.log('8');
 
-    console.log("2");
-
-    new Promise((resolve, reject) => {
-        console.log("3");
-
-        setTimeout(() => {
-            console.log("4");
-            resolve();
-            reject();
-            console.log("5");
-        });
+      return '9';
     })
-        .finally(() => console.log("6"))
-        .then(() => console.log("7"))
-        .catch(() => console.log("8"))
-        .then(() => console.log("9"));
+    .then(console.log)
+    .catch(console.log)
+    .then(() => console.log('10'));
 
-    console.log("10");
+  console.log('11');
 
-    setTimeout(() => {
-        console.log("11");
-    }, 0);
+  setTimeout(() => {
+    console.log('12');
+  }, 0);
 }
 
 // timeouts();
+
 ```
 
-> Ответ: 2 3 10 1 4 5 6 7 9 11
+> Ответ: 2 3 11 1 4 7 8 5 10 12

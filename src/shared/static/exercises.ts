@@ -6,24 +6,23 @@ export default [
         template: "html",
         questions: [
             {
-                id: "semantic",
-                question: "Задача на вёрстку и семантику",
-                tags: ["easy"],
-            },
-            {
                 id: "ally",
                 question: "Доступная карточка товара",
                 tags: ["easy"],
             },
             {
-                id: "form",
-                question: "Сломанная форма",
+                id: "table",
+                question: "Понимание работы таблиц",
                 tags: ["easy"],
             },
             {
-                id: "interact",
-                question:
-                    "Семантичная вложенность и корректные интерактивные элементы",
+                id: "select",
+                question: "Понимание работы селекта",
+                tags: ["easy"],
+            },
+            {
+                id: "interactive",
+                question: "Вложенность интерактивных элементов",
                 tags: ["easy"],
             },
         ],
@@ -69,28 +68,8 @@ export default [
         template: "js",
         questions: [
             {
-                id: "immutable",
-                question: "Иммутабельность объектов",
-                tags: ["easy"],
-            },
-            {
                 id: "context",
                 question: "Понимание контекста",
-                tags: ["easy"],
-            },
-            {
-                id: "descriptors",
-                question: "Дескрипторы свойств объекта",
-                tags: ["easy"],
-            },
-            {
-                id: "chaining",
-                question: "Чейнинг функций",
-                tags: ["easy"],
-            },
-            {
-                id: "prototype",
-                question: "Прототипное наследование",
                 tags: ["easy"],
             },
             {
@@ -101,21 +80,41 @@ export default [
             {
                 id: "log",
                 question: "Логирующий декоратор",
-                tags: ["easy"],
+                tags: ["hard"],
             },
             {
                 id: "event-loop",
                 question: "Event loop",
-                tags: ["easy"],
-            },
-            {
-                id: "promises",
-                question: "Последовательное выполнение промисов",
-                tags: ["easy"],
+                tags: ["medium"],
             },
             {
                 id: "flat",
                 question: "Array.flat полифилл",
+                tags: ["medium"],
+            },
+            {
+                id: "borrowing",
+                question: "Заимствование метода",
+                tags: ["medium"],
+            },
+            {
+                id: "async-catch",
+                question: "Обработка ошибок",
+                tags: ["easy"],
+            },
+            {
+                id: "typeof",
+                question: "Расширенный typeof",
+                tags: ["easy"],
+            },
+            {
+                id: "click-once",
+                question: "Отписка от события через AbortController",
+                tags: ["easy"],
+            },
+            {
+                id: "error-catching-chain",
+                question: "Цепочка обработки ошибок",
                 tags: ["easy"],
             },
         ],

@@ -1,22 +1,28 @@
 
 ```html
-<!--
-    Представлен HTML-код карточки товара.
-    Найдти не менее 7 ошибок, связанных с:
 
-    - Семантикой,
-    - Доступностью (a11y),
-    - Валидностью разметки.
--->
+<div>
+  <a href="product.html">
+    <img src="laptop.jpg" width="300">
+  </a>
 
-<div class="product-card">
-    <img src="product.jpg" width="200" height="200" />
-    <div class="title">Ультрабук SuperBook</div>
-    <p class="price">85 000 ₽</p>
-    <div class="discount">-15%</div>
-    <div class="button" role="button" tabindex="0">В корзину</div>
-    <div class="rating">★★★★☆ <span>(124 отзыва)</span></div>
+  <div>
+    <a href="product.html">Ноутбук Apple MacBook Pro 16"</a>
+  </div>
+
+  <div>
+    Мощный ноутбук с процессором M3 Pro, 18 ГБ оперативной памяти и SSD 512 ГБ
+  </div>
+
+  <div>
+    <span>299 990 ₽</span>
+  </div>
+
+  <div>
+    <button>Заказать</button>
+  </div>
 </div>
+
 ```
 
 ---
@@ -24,58 +30,53 @@
 ```html
 <!-- Ответ -->
 
-<article class="product-card" itemscope itemtype="http://schema.org/Product">
-    <figure class="product-image">
-        <img
-            src="product.jpg"
-            alt="Ультрабук SuperBook, серебристый корпус на белом фоне"
-            width="200"
-            height="200"
-            loading="lazy"
-            itemprop="image"
-        />
-        <figcaption class="visually-hidden">
-            Изображение товара Ультрабук SuperBook
-        </figcaption>
+<article itemscope itemtype="https://schema.org/Product">
+  <a
+    href="product.html"
+    aria-label="Перейти к товару: Ноутбук Apple MacBook Pro 16 дюймов"
+  >
+    <figure>
+      <img
+        src="laptop.jpg"
+        alt="Ноутбук Apple MacBook Pro 16 дюймов, вид спереди на белом фоне"
+        width="300"
+        height="200"
+        loading="lazy"
+        itemprop="image"
+      >
     </figure>
+  </a>
 
-    <h3 class="product-title" itemprop="name">Ультрабук SuperBook</h3>
+  <div>
+    <header>
+      <h2 itemprop="name">
+        <a href="product.html">Ноутбук Apple MacBook Pro 16"</a>
+      </h2>
+    </header>
 
-    <div
-        class="price-container"
+    <p itemprop="description">
+      Мощный ноутбук с процессором M3 Pro, 18 ГБ оперативной памяти и SSD 512 ГБ.
+      Идеально подходит для профессиональной работы с графикой и видео.
+    </p>
+
+    <footer>
+      <div
         itemprop="offers"
         itemscope
-        itemtype="http://schema.org/Offer"
-    >
-        <meta itemprop="priceCurrency" content="RUB" />
-        <p class="price">
-            <span class="visually-hidden">Цена: </span>
-            <data itemprop="price" value="85000">85 000 ₽</data>
-        </p>
-        <div class="discount" aria-hidden="true">-15%</div>
-        <span class="visually-hidden">Скидка 15%</span>
-    </div>
+        itemtype="https://schema.org/Offer"
+      >
+        <data value="299990" itemprop="price">299 990</data>
+        <span itemprop="priceCurrency" content="RUB">₽</span>
+        <meta itemprop="availability" content="https://schema.org/InStock">
+      </div>
 
-    <button
+      <button
         type="button"
-        class="add-to-cart-button"
-        aria-label="Добавить Ультрабук SuperBook в корзину"
-    >
-        В корзину
-    </button>
-
-    <div
-        class="product-rating"
-        itemprop="aggregateRating"
-        itemscope
-        itemtype="http://schema.org/AggregateRating"
-    >
-        <span class="visually-hidden">Рейтинг: </span>
-        <span aria-hidden="true">★★★★☆</span>
-        <meta itemprop="ratingValue" content="4" />
-        <meta itemprop="bestRating" content="5" />
-        <meta itemprop="ratingCount" content="124" />
-        <span class="reviews-count">(124 отзыва)</span>
-    </div>
+        aria-label="Добавить в корзину Ноутбук Apple MacBook Pro 16 дюймов"
+      >
+        Заказать
+      </button>
+    </footer>
+  </div>
 </article>
 ```

@@ -1,9 +1,5 @@
 
 ```js
-/**
-    Дан следующий JavaScript-код.
-    Необходимо реализовать простой класс кэширования.
-*/
 
 class SimpleCache {
     // implement methods
