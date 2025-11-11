@@ -6,24 +6,23 @@ export default [
         template: "html",
         questions: [
             {
-                id: "semantic",
-                question: "Задача на вёрстку и семантику",
-                tags: ["easy"],
-            },
-            {
                 id: "ally",
                 question: "Доступная карточка товара",
                 tags: ["easy"],
             },
             {
-                id: "form",
-                question: "Сломанная форма",
+                id: "table",
+                question: "Понимание работы таблиц",
                 tags: ["easy"],
             },
             {
-                id: "interact",
-                question:
-                    "Семантичная вложенность и корректные интерактивные элементы",
+                id: "select",
+                question: "Понимание работы селекта",
+                tags: ["easy"],
+            },
+            {
+                id: "interactive",
+                question: "Вложенность интерактивных элементов",
                 tags: ["easy"],
             },
         ],
