@@ -78,6 +78,26 @@ export default [
                 tags: ["easy"],
             },
             {
+                id: "pipe",
+                question: "Пайп оператор",
+                tags: ["easy"],
+            },
+            {
+                id: "code-review",
+                question: "Код ревью",
+                tags: ["easy"],
+            },
+            {
+                id: "race-with-timeout",
+                question: "Промис с ограничением по времени",
+                tags: ["medium"],
+            },
+            {
+                id: "lazy-chain",
+                question: "Ленивая цепочка вычислений",
+                tags: ["medium"],
+            },
+            {
                 id: "log",
                 question: "Логирующий декоратор",
                 tags: ["hard"],
@@ -146,7 +166,7 @@ export default [
             {
                 id: "util",
                 question: "Создание фильтрующего Utility Type",
-                tags: ["easy"],
+                tags: ["hard"],
             },
             {
                 id: "void",
@@ -156,6 +176,11 @@ export default [
             {
                 id: "context",
                 question: "Потеря контекста",
+                tags: ["easy"],
+            },
+            {
+                id: "typing",
+                question: "Типизация функции",
                 tags: ["easy"],
             },
         ],
